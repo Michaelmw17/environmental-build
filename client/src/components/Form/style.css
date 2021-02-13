@@ -52,7 +52,9 @@ input[type="submit"] {
   color: #fff;
   border: none
 } */
-
+#subject {
+   margin-bottom: 30px;
+}
 .form-group {
    display: block;
   padding: 16px 50px;

@@ -19,32 +19,32 @@ function Navbar() {
     const loginRegLink = (
         <ul className="navbar-nav list-group list-group-horizontal">
             <li>
-                <Link className="mb-1 mr-1 btn btn-sm active" to="/login">
+                <Link className="mb-1 mr-1 btn btn-sm bg-info active" to="/login">
                     Login
                 </Link>
             </li>
             <li>
-                <Link className="btn btn-sm active" to="/register">
+                <Link className="btn btn-sm bg-info active" to="/register">
                     Register
                 </Link>
             </li>
         </ul>
     );
     const userLink = (
-        <ul className="navbar-nav list-group list-group-horizontal">
+        <ul className="navbar-nav list-group list-group-horizontal mr-auto">
             <li>
-                <Link className="mb-1 mr-1 btn btn-sm active" to="/">
+                <Link className="mb-1 mr-1  btn btn-sm bg-info active" to="/">
                     Home
                 </Link>
             </li>
             <li>
-                <Link className="mb-1 mr-1 btn btn-sm active" to="/dashboard">
+                <Link className="mb-1 mr-1 btn btn-sm bg-info active" to="/dashboard">
                     Dashboard
                 </Link>
             </li>
             <li>
                 <button
-                    className="btn btn-sm active"
+                    className="btn btn-sm bg-info active"
                     id="logoutBtn"
                     data-toggle="modal"
                     data-target="#logoutModal"

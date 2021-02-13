@@ -1,0 +1,11 @@
+.profile {
+    padding-left: 30px;
+    color: black;
+    padding: 100px;
+    border-radius: 125px;
+}
+.info {
+    color: black;
+    background-color: rgb(58,181,74);
+    border-left: 4px solid rgb(58,181,74);
+    }

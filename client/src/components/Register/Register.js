@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { registerUser, getUsers } from '../../utils/userApis';
 import { checkFormFields } from './checkFormFields';
-
+import './styles.css'
 function Register(props) {
     const history = useHistory();
 
@@ -107,7 +107,7 @@ function Register(props) {
                             />
                             <span style={{ color: 'red' }}>{registerState.errors['password']}</span>
                         </div>
-                        <button type="submit" className="btn btn-lg btn-primary btn-block">
+                        <button type="submit" className="btn btn-lg btn-info bg-info btn-block">
                             Register
                         </button>
                     </form>

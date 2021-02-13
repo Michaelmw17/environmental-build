@@ -28,7 +28,7 @@ export default function ContactForm() {
                         <label htmlFor="fname">Full Name</label>
                         </div>
                         <div className="col-75">
-                        <input type="text" id="fname" name="firstName" placeholder="Your Full name.." />
+                        <input type="text" id="fname" name="firstName"minLength="5"  required="required" placeholder="Your Full name.." />
                         </div>
                     </div>
                     <div className="row">
@@ -36,7 +36,8 @@ export default function ContactForm() {
                         <label htmlFor="lname">Email</label>
                         </div>
                         <div className="col-75">
-                        <input type="text" name="email"  placeholder="Your  email.." />
+                                <input type="email" name="email" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="JohnSmith@email.com" />
+                                
                         </div>
                         </div>
                         <div className="row">
@@ -44,7 +45,7 @@ export default function ContactForm() {
                         <label htmlFor="fname">Subject </label>
                         </div>
                         <div className="col-75">
-                        <input type="text"  name="subject"placeholder="Your Subject.." />
+                        <input type="text"  name="subject"placeholder="Your Subject.." required="required" />
                         </div>
                     </div>
                         <div className="row">
@@ -52,13 +53,13 @@ export default function ContactForm() {
                         <label htmlFor="startDate">Start Date </label>
                         </div>
                         <div className="col-75">
-                        <input type="date" name="startDate" />
+                        <input type="date" name="startDate" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"  required="required"/>
                         </div>
                         <div className="col-25">
                         <label htmlFor="endDate">End Date </label>
                         </div>
                         <div className="col-75">
-                        <input type="date" name="endDate" />
+                        <input type="date" name="endDate" minRanges="DateTime.Today" isValidDate="true"  pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"  required="required"/>
                         </div>
                     </div>
                     <div className="row">
@@ -66,11 +67,11 @@ export default function ContactForm() {
                         <label htmlFor="subject">Message</label>
                         </div>
                         <div className="col-75">
-                        <textarea id="subject" name="message" placeholder="Write something.." style={{height: '200px'}} defaultValue={""} />
+                        <textarea id="subject" name="message" minLength="5" required="required" placeholder="Write something.." style={{height: '200px'}} defaultValue={""} />
                         </div>
                     </div>
                     <div className="row">
-                        <input type="submit" value="Send" lg />
+                        <input type="submit" value="Send" />
                     </div>
                     </form>
                 </div>

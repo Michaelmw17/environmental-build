@@ -5,7 +5,7 @@ import SideBarNav from '../../../components/AppNav/hamburgerNav';
 import ContactForm from '../../../components/Form/email'
 import HeaderBrandDescription from '../../HeaderEnquire/HeaderBrand'
 // import BrandDescription from '../../../components/BrandDescription/BrandDescription'
-// import Navbar from '../../Navbar/Navbar'
+import Navbar from '../../Navbar/Navbar'
 // import Fade from 'react-reveal/Fade';
 
 import "./style.css";
@@ -17,11 +17,10 @@ render() {
     return (
       <div className="landing-grid-about">
         <SideBarNav pageWrapId={"page-wrap"} outerContainerId={"App"} />
-          {/* <Navbar /> */}
+          <Navbar />
         <div className="FormHeader">
           <HeaderBrandDescription/>
           {/* <Container> */}
-          {/* <FormContact/> */}
               <ContactForm />
           {/* </Container> */}
                 

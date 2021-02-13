@@ -27,20 +27,20 @@ const SideBarNav = ()  => {
                 Location
                     </Link>
                       {/* Divider */}
-                                <hr className="sidebar-divider d-none d-md-block" />
+                                {/* <hr className="sidebar-divider d-none d-md-block" />
                     <Link className="menu-item" to="/dashboard">
                 Dashboard
-                    </Link>
+                    </Link> */}
                         {/* Divider */}
                                 <hr className="sidebar-divider d-none d-md-block" />
                     <Link className="menu-item" to="/profile"  >
                 Profile
                     </Link>
                     {/* Divider */}
-                                    <hr className="sidebar-divider d-none d-md-block" />
+                                    {/* <hr className="sidebar-divider d-none d-md-block" />
                     <Link  className="menu-item" to="/other">
                 Other
-                    </Link>
+                    </Link> */}
                     {/* Divider */}
                                     <hr className="sidebar-divider d-none d-md-block" />
                     <Link  className="menu-item" to="/login">

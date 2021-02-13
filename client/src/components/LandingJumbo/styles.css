@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+#body{
+  min-height: 30vh;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+     font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+ 
+  
+}
+
+.header{
+
+  color: rgb(7, 7, 7);
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  height: 140px;
+  padding: 10px ;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 120px;
+}
+
+.header-title{
+  font-size: 50px;
+}
+
+.header-text{
+  font-size: 19px;
+  padding: 10px;
+  
+  
+}
+
+.section{
+  flex-flow: row wrap;
+  width: 90%;
+  display: flex;
+  flex-direction: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 46px;
+  color: black;
+   background-color: rgb(58,181,74);
+border-radius: 25px;
+  border: 1px solid rgb(58,181,74)
+}
+
+
+.big-div {
+  width: 70%;
+  margin-bottom: 100px;
+  color: black;
+}
+
+.bg-grey{
+margin-bottom: 30px;
+color: black !important;
+
+}
+
+.bg-green{
+
+color: black !important;
+}
+
+
+.div-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.contact-container  {
+  flex-flow: column;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width:80%;
+  
+}
+.div-title{
+  text-align: center;
+}
+
+
+.contact-form{
+  display: flex;
+  flex-direction: row;
+  /*flex-flow: row wrap;*/
+  justify-content: space-between;
+  width:100%;
+}
+
+#sect1{
+  width: 100%;
+}
+
+#sect2{
+  width:100%;
+}
+
+.contact-form > div {
+  width: 500px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+}
+
+.input-field {
+  height: 40px;
+  margin: 15px 0;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:725px){
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    /*flex-flow: row wrap;*/
+    width:80%;
+  }
+
+  .section{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
+ 
+}
+
+

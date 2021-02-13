@@ -9,6 +9,8 @@ import Dashboard from './components/pages/Dashboard/Dashboard';
 import Other from './components/pages/Other/Other';
 import Profile from './components/Profile/Profile';
 import StartUp from './components/pages/StartUp/StartUp';
+import Enquire from './components/pages/Enquire/enquire';
+import MenuBar from './components/AppNav/hamburgerNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AppContextProvider } from './store';
 
@@ -28,7 +30,9 @@ function App() {
                         <PrivateRoute exact path="/profile" component={Profile} />
                         <PrivateRoute exact path="/dashboard" component={(Dashboard)} />
                         <PrivateRoute exact path="/other" component={(Other)} />
+                        <PrivateRoute exact path="/hamburgerNav" component={MenuBar} />
                         <PrivateRoute exact path="/startUp" component={StartUp} />
+                        <PrivateRoute exact path="/enquire" component={Enquire} />
                     </div>
                 </div>
             </Router>

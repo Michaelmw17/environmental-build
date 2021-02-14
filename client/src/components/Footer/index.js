@@ -14,7 +14,7 @@ wordWrap: "wrap",
 position: "fixed",
 left: "0",
 bottom: "0",
-    width: "100%",
+width: "100%",
 opacity: "0.5"
 };
 
@@ -24,9 +24,8 @@ export default class Footer extends Component {
         <Container className="container-fluid">
         <Row>
           <Col style={stickyFooterStyle} sm={12}>
-                    <p>
-                        lorem ipsum dolor sit amet, consectetur
-            </p>
+            &copy; Copyright  2022 | "Eco Getaway" |
+            Michaelmw17@outlook.com | (+614) 449-620-082 |
           </Col>
         </Row>
       </Container>

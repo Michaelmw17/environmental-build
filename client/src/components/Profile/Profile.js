@@ -2,7 +2,8 @@ import React from 'react';
 import { useAppContext } from '../../store';
 // import Sidebar from '../Sidebar/Sidebar';
 import SideBarNav from '../AppNav/hamburgerNav';
- import './styles.css'
+import './styles.css'
+import Footer from '../Footer'
 function Profile() {
     const [authState] = useAppContext();
 
@@ -33,6 +34,8 @@ function Profile() {
                     </table>
                 </div>
             </div>
+           
+ <Footer />
         </div>
     );
 }

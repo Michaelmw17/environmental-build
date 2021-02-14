@@ -1,6 +1,6 @@
 
 .landing-grid-about {
- text-align: center;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -20,17 +20,26 @@
   padding-left: 30px
 }
 .imgContainer{
-   padding-left: 100px;
+  padding-left: 100px;
 }
 
 .google-plus {
-    background-color: rgb(58,181,74);
-border-radius: 150px;
-  border-left: 4px solid rgb(58,181,74);
+
     margin-bottom: 30px;
 }
 .google-apps {
-      background-color: rgb(58,181,74);
-border-radius: 150px;
+  background-color: rgb(58,181,74);
+  border-radius: 150px;
   border-left: 4px solid rgb(58,181,74);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
+@media (max-width: 767.98px) {
+  .google-apps {
+      margin-left: 40px;
+}
+ }
+@media (min-width: 992px) { .google-apps {
+      margin-left: 140px;
+} }

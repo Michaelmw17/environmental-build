@@ -4,7 +4,7 @@ import { useAppContext } from '../../store';
 import { loginUser } from '../../utils/userApis';
 import { useHistory } from 'react-router-dom';
 import { setUserLoggedIn } from '../../actions';
-
+import Footer from '../Footer'
 function Login() {
     const history = useHistory();
 
@@ -78,6 +78,8 @@ function Login() {
                     </form>
                 </div>
             </div>
+            
+ <Footer />
         </div>
     );
 }

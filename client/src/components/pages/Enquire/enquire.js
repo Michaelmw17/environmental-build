@@ -3,9 +3,6 @@ import SideBarNav from '../../../components/AppNav/hamburgerNav';
 import ContactForm from '../../../components/Form/email'
 import HeaderBrandDescription from '../../HeaderEnquire/HeaderBrand'
 import Navbar from '../../Navbar/Navbar'
-
-import "./style.css";
-
 import Footer from '../../Footer'
 
 

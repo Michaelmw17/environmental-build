@@ -4,6 +4,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import Href from "./Href";
+
 import "./style.css";
 
 import { Button, Icon } from 'semantic-ui-react'
@@ -12,6 +14,27 @@ const items = words.map((word, e) => {
     return <li key={e}>{word}</li>;
 });
 
+const testData = {
+  text: "Town Bangalow | Make the move to Bangalow",
+  link: "http://www.townbangalow.com.au"
+};
+const testData1 = {
+  text: "Byron Bay Beaches | Official byronbay.com Guide",
+  link: "https://www.byron-bay.com/beaches/"
+};
+const testData2 = {
+  text: "Home of Brookie’s Gin | Cape Byron Distillery",
+  link: "https://www.capebyrondistillery.com"
+};
+const testData3 = {
+  text: "Federal Doma Cafe",
+  link: "https://www.facebook.com/Federal-Doma-Cafe-444756125571324/"
+};
+const testData4 = {
+  text: "Byron Bay Restaurant and Wedding Venue | Harvest Newrybar",
+  link: "https://harvestnewrybar.com.au"
+};
+
 const  SideDescription = ()  => {
         return (
             <div className="FormHeader">
@@ -19,11 +42,40 @@ const  SideDescription = ()  => {
                     <Row>
                         <div className="FormFinePrint">
                             <Col md={12}>
+                               
                                     <ul> {items} </ul>
-                                </Col>
-                                        <p> 
-                                The location of Possum Creek is renowned for its beauty and handy location to Bangalow and the beaches of Byron Bay. Here you will find a special holiday getaway in a home lovingly constructed using timber and Mt Warning basalt rock. The main "Rosella" house with an outlook to rolling fields. Both accommodation options have access to sparkling clear swimming hole and rainforest pocket.
-                                        </p>
+                            </Col>
+                            <h1>Things To Do</h1>
+                            <ul>
+                                <li>
+                                    <Href
+                                    text={testData.text}
+                                    url={testData.link}
+                                    />
+                                </li>
+                                <li>
+                                    <Href
+                                    text={testData1.text}
+                                    url={testData1.link}
+                                    />
+                                </li>
+                                <li>
+                                    <Href
+                                    text={testData2.text}
+                                    url={testData2.link}
+                                    />
+                                </li>
+                                <li>
+                                    <Href
+                                    text={testData3.text}
+                                    url={testData3.link}
+                                    />
+                                    <Href
+                                    text={testData4.text}
+                                    url={testData4.link}
+                                    />
+                                </li>
+                                        </ul>
                             <Col md={12}>
                               
                                 <Button  animated  inverted color='teal' href='./about'>

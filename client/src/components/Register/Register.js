@@ -4,6 +4,8 @@ import { useHistory } from 'react-router-dom';
 import { registerUser, getUsers } from '../../utils/userApis';
 import { checkFormFields } from './checkFormFields';
 import './styles.css'
+import Footer from '../Footer'
+
 function Register(props) {
     const history = useHistory();
 
@@ -114,6 +116,7 @@ function Register(props) {
                     </form>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

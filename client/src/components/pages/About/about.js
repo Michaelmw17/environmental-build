@@ -6,7 +6,7 @@ import SideBarNav from '../../AppNav/hamburgerNav';
 import AboutDescription from '../../AboutContext/aboutDescription'
 import Navbar from '../../Navbar/Navbar';
 import Footer from '../../Footer'
- 
+
 class About extends React.Component {
     render() {
         return (<>
@@ -17,7 +17,8 @@ class About extends React.Component {
                     <AboutDescription />
                 
                 {/* </Pulse> */}
-            </div><Footer />
+            </div>
+            <Footer />
         </>
         );
     }

@@ -69,7 +69,7 @@ export default function ContactForm() {
                         <label htmlFor="subject">Message</label>
                         </div>
                         <div className="col-75">
-                        <textarea id="subject" name="message" minLength="5" required="required" placeholder="Write something.." style={{height: '200px'}} defaultValue={""} />
+                        <textarea id="subject" name="message" minLength="5" required="required" placeholder="Write something.." style={{height: '200px', maxHeight: '300px'}} defaultValue={""} />
                         </div>
                     </div>
                     <div className="row-btn">

@@ -50,7 +50,11 @@ h5 {
     /* padding-bottom: 20px; */
     font-size: 20px;
 }
-
+aboutDescriptionParagraph{
+font-size: 14px;
+    line-height: 115%;
+    text-align: justify;
+}
 /* These rules take effect when the browser's width */
 /* is either 225px or more. */
 @media screen and (min-width: 225px) {
@@ -106,9 +110,14 @@ h5 {
       width: 100%;
     }
     p {
-        font-size: 18px;
-        line-height: 150%;
-        text-align: justify;
+        
+        font-size: 14px;
+    line-height: 115%;
+    text-align: justify;
+    }
+    .ListItems{
+        font-size: 14px;
+        line-height: 115%;
     }
     .navLogo {
         margin-top: 10px;
@@ -168,7 +177,6 @@ h5 {
 
     p {
         font-size: 15px;
-        line-height: 150%;
         text-align: justify;
     }
 
@@ -210,7 +218,10 @@ h5 {
         width: 400px;
         height: 90px;
     }
-
+   .ListItems{
+        font-size: 17px;
+        line-height: 115%;
+    }
     .form-group,
     .form-control {
         font-size: 16px;

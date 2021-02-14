@@ -104,7 +104,7 @@ const HeaderCard = (props) =>{
                     {props.description}
                 </span>
             </div>
-                <Button  animated  inverted color='olive' href='./about' style={{marginBottom:'30px'}} >
+                <Button  animated  inverted color='olive' href='./about' style={{marginBottom:'30px', marginLeft: '30px'}} >
                         <Button.Content  visible>Enquire</Button.Content>
                             <Button.Content  hidden  href='./enquire'>
                                 <Icon  name='arrow right' />

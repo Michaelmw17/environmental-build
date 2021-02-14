@@ -37,7 +37,7 @@ class AboutDescription extends Component {
                         <div className="container-about">
                         <div className="aboutDescription">
                             <Row>
-                                <Col xs={12} sm={12} md={4} lg={4}>
+                                <Col xs={12} sm={12} md={4} lg={4} className='ListItems'>
                                     <ul> {items} </ul>
                                 </Col>
                                     <Col xs={12} sm={12} md={8} lg={8}>

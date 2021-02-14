@@ -1,6 +1,5 @@
 import React from 'react';
 import "./style.css";
-// import Pulse from 'react-reveal/Pulse';
 import SideBarNav from '../../AppNav/hamburgerNav';
 import WrappedMap from '../../Google/googleApi';
 import LocationDescription from '../../LocationDescription/locationJumbo';
@@ -28,10 +27,12 @@ function Locations() {
                                     loadingElement={<div style={{ height: `100%` }} />}
                                     containerElement={<div style={{ height: `97vh`, marginLeft: '60px', marginRight: '60px'}} />}
                                     mapElement={<div style={{ height: `100%` }} />}
-                                  /></div>
+                              />
+                            </div>
                         </Col>
                       </Row>
-                    </div></div>
+                </div>
+              </div>
             </div>
     );
 }

@@ -2,13 +2,13 @@
 
 .AboutUl {
     font-size: 1rem;
-    color: black;
+    color: white;
 }
 .PhotoGallery {
     padding-top: 20px;
 }
 .aboutDescription p {
-    color:black
+    color:white
 }
 .aboutHeader {
     padding-top: 60px;
@@ -17,12 +17,26 @@
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 
 }
+@media only screen and (min-width:320px) and (max-width:725px){
+  .container-about {
+  padding: 1px;
+  margin: 1px;
+}
+}
 .container-about {
     background-color: rgb(58,181,74);
     border-radius: 25px;
-  border: 1px solid rgb(58,181,74);
-  padding: 30px;
-  margin: 30px;
+  border: 1px solid rgb(0, 0, 0);
+  padding:30px;
+  margin:30px;
+  margin-bottom:50px;
+  flex-flow: column;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: space-between;
+  width:90%;
+
+  
 }
 .bg-near-white {
   background-color: #f4f4f4;
@@ -109,19 +123,16 @@
   animation-name: fadeIn;
 }
 
-/* .App {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
 
-.photo-caption {
-  font-family: "Roboto", sans-serif;
+#wrap{
+  background-color: #ddd;
+  padding: 50px 0;
 }
-
-.caption-right {
-  font-family: "Roboto", sans-serif;
+img{
+    width: 100%;
+  }
+#slider{
+  width: 300px;
+  margin: 0 auto;
+  
 }
-
-.photo-subcaption {
-  font-family: "Roboto", sans-serif;
-} */

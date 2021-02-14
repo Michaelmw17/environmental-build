@@ -38,7 +38,7 @@ function Navbar() {
                 </Link>
             </li>
             <li>
-                <Link className="mb-1 mr-1 btn btn-sm bg-info active" to="/dashboard">
+                <Link className="mb-1 mr-1 btn btn-sm bg-info active" to="/profile">
                     Dashboard
                 </Link>
             </li>

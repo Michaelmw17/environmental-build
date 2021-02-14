@@ -4,34 +4,35 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import HeaderAbout from './AboutHeader'
-import {
-  LazyImageWithBox,
-  LazyImageWithPlaceholder
-} from "./photos";
+import SecondCarousel from './secondPhotos';
+import Carousel from './photos'
 import "./styles.css";
 
-
-// const App = () => <Gallery photos={photos} direction={"column"} />
-                                    
-const words = ['Creek frontage / swimming hole', 'Clay tennis court',
-    'Studio/shed with bathroom',
-    'Double garage and workshop',
-    'Home design by Architect RH Lockwood Master built by David Oliver',
-    'Blackbutt & Brushbox floors',
-    'Hoop pine ceilings',
-    'Plentiful water supply',
-    'Wildlife - Koalas, Platypus, Wallabies',
-    'Close to School Buses, Bangalow and Byron Bay'];
+const words = ['Hinterland getaways in spectacular location 495 Friday Hut Road, Possum Creek', 'Two accommodation options available', 'Main "Rosella" house 3 bedrooms', 'Flat "Bluebird" house 1 bedroom self-contained unit', 'Rustic clay tennis court', ' Set on rainforest pocket ', 'Plentiful water supply','Vegetable garden', 'Wildlife - Koalas, Platypus, Wallabies', 'Close to Bangalow and Byron Bay'];
 const items = words.map((word, e) => {
     return <li key={e}>{word}</li>;
 });
 class AboutDescription extends Component {
+    
     render() {
+        
         return (
             <div className="FormHeader">
                 <Container>
                     <HeaderAbout/>
                     <hr className="hrAbout" style={{ borderTop: '1px solid rgba(63, 81, 181, 0.5)' }} />
+                    <Container>
+                        <div className="PhotoGallery">
+                        <Row>
+                        <Col xs={12} sm={12} md={12} lg={6}>
+                                    <Carousel />
+                            </Col>
+                                <Col xs={12} sm={12}  md={12} lg={6}>
+                                    <SecondCarousel/>
+                                </Col> 
+                            </Row>
+                            </div>
+                        </Container>
                     <Container>
                         <div className="container-about">
                         <div className="aboutDescription">
@@ -53,83 +54,7 @@ class AboutDescription extends Component {
                             </div>
                         </div>
                     </Container>
-                    <Container>
-                            <div>
-                                <Row>
-                                    <Col md={6}>
-                                <LazyImageWithBox
-                                src="./Images/image2.jpg"
-                                alt="Possum Creek"
-                                        />
-                                        </Col>
-                                    {/* Keeps aspect ratio, shows gray box, fades in */}
-                                    <Col md={6}>
-                                <LazyImageWithBox
-                                src="./Images/image3.jpg"
-                                alt="Possum Creek"
-                                        />
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={6}>
-                                <LazyImageWithBox
-                                src="./Images/image4.jpg"
-                                alt="Possum Creek"
-                                        />
-                                        </Col>
-                                    {/* Keeps aspect ratio, shows gray box, fades in */}
-                                    <Col md={6}>
-                                <LazyImageWithBox
-                                src="./Images/image7.jpg"
-                                alt="Possum Creek"
-                                        />
-                                    </Col>
-                                </Row>
-                                    {/* Keeps aspect ratio, shows placeholder image, fades in */}
-                                {/* <Row>
-                                <Col md={6}>
-                                    <LazyImageWithPlaceholder
-                                    src="./Images/image9.jpg"
-                                    placeholderSrc="./Images/image9.jpg"
-                                    alt="Possum Creek"
-                                        />
-                                    </Col>
-                                    <Col md={6}>
-                                    <LazyImageWithPlaceholder
-                                src="./Images/image10.jpg"
-                                placeholderSrc="./Images/image10.jpg"
-                                alt="Possum Creek"
-                                    />
-                                </Col>
-                            </Row>
-                        <Row>
-                            <Col md={6}> */}
-                                {/* Keeps aspect ratio, shows placeholder image, fades in */}
-                                {/* <LazyImageWithPlaceholder
-                                src="./Images/image11.jpg"
-                                placeholderSrc="./Images/image11.jpg"
-                                alt="Possum Creek"
-                                    />
-                                </Col>
-                                    <Col md={6}>
-                                    <LazyImageWithPlaceholder
-                                src="./Images/image12.jpg"
-                                placeholderSrc="./Images/image12.jpg"
-                                alt="Possum Creek"
-                                    /></Col>
-                                </Row> */}
-                            <Row>
-
-                                {/* Keeps aspect ratio, shows placeholder image, fades in */}
-                                {/* <LazyImageWithPlaceholder
-                                src="./Images/image9.jpg"
-                                placeholderSrc="./Images/image9.jpg"
-                                alt="Possum Creek"
-                                    /> */}
-                                </Row>
-                            </div>
-                    </Container>
-                    
+                        
                 </Container>
             </div>
         );

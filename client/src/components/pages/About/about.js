@@ -5,18 +5,20 @@ import "./style.css";
 import SideBarNav from '../../AppNav/hamburgerNav';
 import AboutDescription from '../../AboutContext/aboutDescription'
 import Navbar from '../../Navbar/Navbar';
-
+import Footer from '../../Footer'
+ 
 class About extends React.Component {
     render() {
-        return (
+        return (<>
             <div className="landing-grid-about">
                 <SideBarNav pageWrapId={"page-wrap"} outerContainerId={"App"} />
                 {/* <Pulse> */}
                 <Navbar /> 
                     <AboutDescription />
+                
                 {/* </Pulse> */}
-            </div>
-        
+            </div><Footer />
+        </>
         );
     }
 }

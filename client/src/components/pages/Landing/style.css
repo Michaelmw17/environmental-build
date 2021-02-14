@@ -1,3 +1,6 @@
+.landing {
+    min-height: 250vh;
+}
 /* .backgroundImg {
     background-image: url(../../assets/images/Green.jpg);
     background-size:     cover;                  

@@ -1,13 +1,13 @@
 import { isEmpty } from 'lodash';
 import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from '../actions/types';
-import jwt_decode from 'jwt-decode';
+import jwtDecode from 'jwt-decode';
 import { setAuthToken } from '../utils/setAuthToken';
 
 const getToken = () => {
     const token = localStorage.getItem('userToken');
     if (token) {
         setAuthToken(token);
-        const decodedToken = jwt_decode(token);
+        const decodedToken = jwtDecode(token);
         return decodedToken;
     }
     return {};

@@ -1,15 +1,18 @@
 import React from 'react';
-// import Form from 'react-bootstrap/Form'
 import emailjs from 'emailjs-com';
 import './style.css'
 
 
 export default function ContactForm() {
-     function sendEmail(e) {
+    function sendEmail(e) {
     e.preventDefault();
 
-        emailjs.sendForm(    "service_i1fajuk",
-                "template_lmdja97",e.target,  "user_jsnJWEQR5CCPz5u6Zz6bJ")
+        emailjs.sendForm(
+                "service_i1fajuk",
+                "template_lmdja97",
+                e.target,
+                "user_jsnJWEQR5CCPz5u6Zz6bJ"
+        )
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -33,19 +36,18 @@ export default function ContactForm() {
                     </div>
                     <div className="row">
                         <div className="col-25">
-                        <label htmlFor="lname">Email</label>
+                        <label htmlFor="Email">Email</label>
                         </div>
                         <div className="col-75">
                                 <input type="email" name="email" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="JohnSmith@email.com" />
-                                
                         </div>
                         </div>
                         <div className="row">
                         <div className="col-25">
-                        <label htmlFor="fname">Subject </label>
+                        <label htmlFor="Subject">Subject </label>
                         </div>
                         <div className="col-75">
-                        <input type="text"  name="subject"placeholder="Your Subject.." required="required" />
+                        <input type="text"  name="subject" placeholder="Your Subject.." required="required" />
                         </div>
                     </div>
                         <div className="row">
@@ -59,7 +61,7 @@ export default function ContactForm() {
                         <label htmlFor="endDate">End Date </label>
                         </div>
                         <div className="col-75">
-                        <input type="date" name="endDate" minRanges="DateTime.Today" isValidDate="true"  pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"  required="required"/>
+                        <input type="date" name="endDate"   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"  required="required"/>
                         </div>
                     </div>
                     <div className="row">
@@ -70,26 +72,12 @@ export default function ContactForm() {
                         <textarea id="subject" name="message" minLength="5" required="required" placeholder="Write something.." style={{height: '200px'}} defaultValue={""} />
                         </div>
                     </div>
-                    <div className="row">
-                        <input type="submit" value="Send" />
+                    <div className="row-btn">
+                        <input type="submit" value="Send" id='btn'/>
                     </div>
                     </form>
                 </div>
             </div>
-            
-            
-            {/* <Form>
-    <Form.Group controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-        We'll never share your email with anyone else.
-        </Form.Text>
-                </Form.Group>
-            </Form> */}
-  </div>
-
+        </div>
     );
-
-
 }

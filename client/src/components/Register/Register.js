@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+// eslint-disable-next-line 
 import { registerUser, getUsers } from '../../utils/userApis';
 import { checkFormFields } from './checkFormFields';
 import './styles.css'

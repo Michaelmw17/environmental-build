@@ -35,7 +35,7 @@ function Login() {
             // Set user to logged in
             await setUserLoggedIn(token, appDispatch);
 
-            history.push('/dashboard');
+            history.push('/');
         } catch (error) {
             appDispatch({
                 type: GET_ERRORS,

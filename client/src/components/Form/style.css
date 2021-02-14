@@ -1,57 +1,4 @@
-/* 
-.Form {
- padding: 30px;
- background-color: black;
-}
-.signUpForm h1 {
-  flex: auto;
-  padding:30px;
-  text-align: center;
-}
-.signUpForm {
-  flex: auto;
-  text-align: center;
-width: '100%';
- 
-}
-.FormFinePrint {
- padding: 10px 60px 10px 60px; 
- word-wrap: wrap;
-}
-.Form-date {
-  padding-top: 30px;
-}
-.SecondDayPicker label, .FirstDayPicker  label {
-  padding-right: 5px;
-}
-.form-group label {
-  font-size: 17px
-}
-.field {
-  margin-bottom: 10px;
-}
 
-.field label {
-  display: block;
-  font-size: 12px;
-  color: #777;
-}
-
-.field input {
-  display: block;
-  min-width: 250px;
-  line-height: 1.5;
-  font-size: 14px;
-}
-
-input[type="submit"] {
-  display: block;
-  padding: 6px 30px;
-  font-size: 14px;
-  background-color: #4460AA;
-  color: #fff;
-  border: none
-} */
 #subject {
    margin-bottom: 30px;
 }
@@ -117,9 +64,20 @@ input[type=submit] {
   display: table;
   clear: both;
 }
-
+@media screen and (min-width: 600px) {
+   .row-btn{
+      margin-left: 220px;
+      width:85%;
+      margin-left: 50px;
+    }
+   #btn{
+      margin-left: 220px;
+      width:95%;
+    }
+}
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+     
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
@@ -175,9 +133,12 @@ input[type="submit"] {
   display: block;
   padding: 6px 30px;
   font-size: 14px;
-  background-color: #4460AA;
+  background-color: #2a5eec;
   color: #fff;
-  border: none
+  border: none;
+  width:80%;
+  border-radius: 45px;
+  align-content: center;
 }
 body, html {
   background-color: #EBECF0;
@@ -195,8 +156,10 @@ form {
   width: 80%;
   margin: 0 auto;
   background-color: rgb(58,181,74);
-border-radius: 25px;
+border-radius: 45px;
   border: 4px solid rgb(58,181,74);
+  padding-bottom: 40px;
+
 }
 .segment {
   padding: 32px 0;
@@ -210,6 +173,10 @@ button, input {
   padding: 16px;
   background-color: #EBECF0;
   text-shadow: 1px 1px 0 #FFF;
+    padding-left: 50px;
+}
+#btn{
+   margin-left: 20px;
 }
 label {
   display: block;

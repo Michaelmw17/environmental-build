@@ -31,7 +31,7 @@ export default function ContactForm() {
                         <label htmlFor="fname">Full Name</label>
                         </div>
                         <div className="col-75">
-                        <input type="text" id="fname" name="firstName"minLength="5"  required="required" placeholder="Your Full name.." />
+                        <input type="text" id="fname" name="firstName" minLength="1"  required="required" placeholder="Your Full name.." />
                         </div>
                     </div>
                     <div className="row">

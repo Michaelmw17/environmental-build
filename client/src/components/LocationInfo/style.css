@@ -1,11 +1,17 @@
 
-.FormHeader {
+.LocationHeader {
   margin: 30px;
+  margin-top: 70px;
   
 }
-.FormFinePrint {
+.LocationFinePrint {
      background-color: rgb(58,181,74);
 border-radius: 25px;
   border: 1px solid rgb(58,181,74);
-
+ font-size: 16px;
+ font-weight: 800;
+ word-wrap: break-word;
+}
+.LocationH1 {
+  color: white
 }

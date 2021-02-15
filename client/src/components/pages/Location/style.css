@@ -27,13 +27,16 @@
 
     margin-bottom: 30px;
 }
+h1 {
+  color: white
+}
 .google-apps {
   background-color: rgb(58,181,74);
   border-radius: 150px;
   border-left: 4px solid rgb(58,181,74);
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 120px;
 }
 @media (max-width: 767.98px) {
   .google-apps {

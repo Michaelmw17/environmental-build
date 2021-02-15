@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import { GET_ERRORS } from '../../actions/types';
 import { useAppContext } from '../../store';
 import { loginUser } from '../../utils/userApis';
 import { useHistory } from 'react-router-dom';
 import { setUserLoggedIn } from '../../actions';
+import Spinner from 'react-bootstrap/Spinner'
+import MyComp from '../MyComp/myComp'
 import Footer from '../Footer'
+import './styles.css'
 function Login() {
     const history = useHistory();
 
@@ -50,6 +53,13 @@ function Login() {
                 <div className="mx-auto mt-5 col-md-6">
                     <form noValidate onSubmit={handleSubmit}>
                         <h1 className="mb-3 h3 font-weight normal">Please Sign in</h1>
+                        <div className="EcoPhoto">
+                        <Suspense fallback={
+                            <Spinner animation="border" />
+                            }>
+                                <MyComp /> 
+                            </Suspense>
+                        </div>
                         <div className="form-group">
                             <label htmlFor="email">Email Address</label>
                             <input

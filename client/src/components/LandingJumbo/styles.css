@@ -2,11 +2,9 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
-  
 }
 
 #body{
- 
   min-width: 100%;
   display: flex;
   align-items: center;
@@ -17,13 +15,10 @@
 }
 
 .header{
-
   color: rgb(7, 7, 7);
   font-weight: 900;
   width: 100%;
   text-align: center;
- 
-  
   margin-left: 20px;
   padding-left: 30px;
   padding-right: 20px;
@@ -31,7 +26,6 @@
 
 .header-title{
   font-size: 50px;
-  
 }
 
 .header-text{
@@ -43,20 +37,20 @@
 }
 
 .section{
-  flex-flow: row wrap;
-  width: 70%;
-  display: flex;
-  flex-direction: row wrap;
-  align-items: center;
-  justify-content: center;
-  margin-top: 46px;
-  color: white;
-  background-color: rgb(58,181,74);
-  border-radius: 25px;
-  border: 0.1px solid rgb(0, 0, 0);
-  margin: 30px;
-  padding-top: 10px;
-
+    flex-flow: row wrap;
+    width: 70%;
+    display: flex;
+    flex-direction: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 46px;
+    color: white;
+    background-color: rgb(58,181,74);
+    border-radius: 25px;
+    border: 0.1px solid rgb(0, 0, 0);
+    margin: 30px;
+    padding-top: 10px;
+    font-size: 18px;
 }
 
 
@@ -150,12 +144,10 @@ color: black !important;
   .contact-form{
     display: flex;
     flex-direction: column;
-    /*flex-flow: row wrap;*/
     width:80%;
   }
 
   .section{
-    
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -163,9 +155,6 @@ color: black !important;
     justify-content: center;
     margin-left: 40px;
   }
-
-
- 
 }
 
 

@@ -37,15 +37,16 @@ const testData4 = {
 
 const  SideDescription = ()  => {
         return (
-            <div className="FormHeader">
+            <div className="LocationHeader">
                 <Container>
                     <Row>
-                        <div className="FormFinePrint">
+                        <div className="LocationFinePrint">
                             <Col md={12}>
                                
                                     <ul> {items} </ul>
                             </Col>
-                            <h1>Things To Do</h1>
+                            <div className="LocationList">
+                            <h1 className="LocationH1">Things To Do</h1>
                             <ul>
                                 <li>
                                     <Href
@@ -70,16 +71,19 @@ const  SideDescription = ()  => {
                                     text={testData3.text}
                                     url={testData3.link}
                                     />
+                                </li>
+                                    <li>
                                     <Href
                                     text={testData4.text}
                                     url={testData4.link}
                                     />
                                 </li>
-                                        </ul>
+                                </ul>
+                                </div>
                             <Col md={12}>
                               
                                 <Button  animated  inverted color='teal' href='./about'>
-                                <Button.Content  visible>Photo Gallery</Button.Content>
+                                <Button.Content  visible>Our Photo Gallery</Button.Content>
                                 <Button.Content  hidden  href='./about'>
                                     <Icon  name='arrow right' />
                                         </Button.Content>

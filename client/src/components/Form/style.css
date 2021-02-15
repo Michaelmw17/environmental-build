@@ -214,7 +214,6 @@ input:focus {
 button {
   color: #61677C;
   font-weight: bold;
-  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   font-weight: 600;

@@ -3,10 +3,9 @@ import React, {Suspense} from 'react';
 import { Link } from 'react-router-dom';
 import Spinner from 'react-bootstrap/Spinner'
 import MyComp from '../MyComp/myComp'
-import './styles.css'
 import { useAppContext } from '../../store';
 import { Button, Icon } from 'semantic-ui-react'
-
+import './styles.css'
 const Header = () => {
     const [state] = useAppContext();
     return(
@@ -25,18 +24,13 @@ const Header = () => {
                 <h1>
                 Welcome {state.user.first_name} {state.user.last_name}
                 </h1> 
-                
-                    Double sectioned environmental house available for your next getaway in Possum Creek
-            
+                    Dual sectioned environmental house available for your next getaway in Possum Creek
             </span>
         </div>
     );
 }
 
-
 const Card = (props) => {
-        
-
     return(
         <div className={props.className} >
             <div className="small-div">
@@ -67,7 +61,6 @@ const CardBlue = (props) =>{
         <div className={props.className} >
             <div className="div-blue">
             </div>
-
             <div className="big-div">
                 <span className='div-title'>
                     {props.title}
@@ -104,7 +97,7 @@ const HeaderCard = (props) =>{
                     {props.description}
                 </span>
             </div>
-                <Button  animated  inverted color='olive' href='./about' style={{marginBottom:'30px', marginLeft: '30px'}} >
+                <Button  animated  inverted color='olive' href='./enquire' style={{marginBottom:'30px', marginLeft: '30px'}} >
                         <Button.Content  visible>Enquire</Button.Content>
                             <Button.Content  hidden  href='./enquire'>
                                 <Icon  name='arrow right' />
@@ -133,15 +126,13 @@ function LandingJumbo() {
                                 img='./' 
                                 title='Rosella - 3 Bed'
                                 description='Main house has 3 bedrooms with loft. Access to sparkling swimming hole and rustic tennis court. NBN, solar, drinking water filtered from tank. Maximum 6 people with minimum 2 night stay.
-                                '
-                                />
+                                '/>
                                 <CardBlue 
                                 className='section bg-grey-second'
                                 img='./' 
                                 title='Bluebird - 1 Bed'
                                 description='Self contained has 1 bedrooms with access to sparkling swimming hole. NBN, drinking water filtered from tank. Maximum 2 people with minimum 2 night stay.
-                                '
-                                />
+                                '/>
                     </div>
             </div>
                         

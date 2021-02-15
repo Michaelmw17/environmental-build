@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import { useAppContext } from '../../store';
-// import Sidebar from '../Sidebar/Sidebar';
 import SideBarNav from '../AppNav/hamburgerNav';
-import './styles.css'
 import Footer from '../Footer'
+import Spinner from 'react-bootstrap/Spinner'
+import MyComp from '../MyComp/myComp'
+import './styles.css'
 function Profile() {
     const [authState] = useAppContext();
 
@@ -14,7 +15,15 @@ function Profile() {
             <div className="flex-row-reverse mt-5 mr-6 d-flex">
                 <div className="col-xs-12 col-sm-12 col-md-12  ">
                     <div className="mx-auto col-sm-12">
-                        <h1 className="text-center">Your Eco Profile</h1>
+                        
+                    <div className="ProfileEco">
+                        <Suspense fallback={
+                            <Spinner animation="border" />
+                            }>
+                                <MyComp /> 
+                            </Suspense>
+                            <h1 className="text-center">Eco Profile</h1>
+                        </div>
                     </div>
                     <table className="table mx-auto col-md-6">
                         <tbody className="info">

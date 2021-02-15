@@ -5,12 +5,23 @@
     border-radius: 125px;
 }
 .info {
+    border-top: none;
     color: black;
     background-color: rgb(58,181,74);
     border-left: 4px solid rgb(58,181,74);
+    margin-top: 40px;
     }
     .ProfileEco {
-  text-align: center;
+        text-align: center;
         display: block;
 
 }
+.table td{
+    border-top: none !important;
+    border-left: none !important;
+    width: 80%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+}
+

@@ -2,7 +2,7 @@
 
 
 ## Contents
-MERN Project composed with components,  readme, package.json, public and src folder with React and license files.0
+MERN Project composed with components,  readme, package.json, public and src folder with React and license files.
 
 ## User Story
 
@@ -41,4 +41,4 @@ _Michael Watt_
 ## Acknowledgments
 
 To Teacher and TA's:
-Jack McNicol, Sandes and Ali
+Ali, Jack and Sandes.

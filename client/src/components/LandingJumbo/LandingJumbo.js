@@ -99,7 +99,7 @@ const HeaderCard = (props) =>{
             </div>
                 <Button  animated  inverted color='olive' href='./enquire' style={{marginBottom:'30px', marginLeft: '30px'}} >
                         <Button.Content  visible>Enquire</Button.Content>
-                            <Button.Content  hidden  href='./enquire'>
+                            <Button.Content  hidden  >
                                 <Icon  name='arrow right' />
                         </Button.Content>
                 </Button>

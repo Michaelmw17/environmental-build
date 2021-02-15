@@ -4,6 +4,8 @@ import SideBarNav from '../AppNav/hamburgerNav';
 import Footer from '../Footer'
 import Spinner from 'react-bootstrap/Spinner'
 import MyComp from '../MyComp/myComp'
+import { Card, Table } from "react-bootstrap";
+
 import './styles.css'
 function Profile() {
     const [authState] = useAppContext();
@@ -25,8 +27,9 @@ function Profile() {
                             <h1 className="text-center">Eco Profile</h1>
                         </div>
                     </div>
-                    <table className="table mx-auto col-md-6">
-                        <tbody className="info">
+                    <Table className="table mx-auto col-md-6 col-sm-4" style={{borderRadius:"60px"}}>
+                        <Card className="CardProfile">
+                        <tbody className="info" >
                             <tr>
                                 <td>First Name</td>
                                 <td>{authState.user.first_name}</td>
@@ -39,12 +42,12 @@ function Profile() {
                                 <td>Email</td>
                                 <td>{authState.user.email}</td>
                             </tr>
-                        </tbody>
-                    </table>
+                            </tbody>
+                            </Card>
+                    </Table>
+                    <Footer />
                 </div>
             </div>
-           
- <Footer />
         </div>
     );
 }

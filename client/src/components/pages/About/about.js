@@ -9,17 +9,15 @@ import Footer from '../../Footer'
 
 class About extends React.Component {
     render() {
-        return (<>
+        return (<div>
             <div className="landing-grid-about">
                 <SideBarNav pageWrapId={"page-wrap"} outerContainerId={"App"} />
                 {/* <Pulse> */}
                 <Navbar /> 
                     <AboutDescription />
-                
-                {/* </Pulse> */}
-            </div>
+                </div>
             <Footer />
-        </>
+        </div>
         );
     }
 }

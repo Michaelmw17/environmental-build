@@ -9,6 +9,18 @@
 [Eco Getaway](https://eco-getaway.herokuapp.com/)
 
 
+## Getting Started
+This repository aims to assist a user in beginning work on a MERN stack application for heroku deployment with a solid file structure as a foundation. 
+
+- A ReactJS front end that uses jwt_passport for authentication and authorization .
+- A MongoDB Backend connection.
+- App  deployed directly to heroku since there a script defined in package.json which will automatically handle building and deploying the app
+
+Since this project will hold both the client application and the server application there will be node modules in two different places. First run `npm install` from the root. After this you will run `npm  install` from the root. Then create a `.env` file with your secret key, and MongoDB connection string. This is a script we have defined in package.json. Alternatively your group may choose to simplify this process by using yarn workspaces as specified [here](https://yarnpkg.com/lang/en/docs/workspaces/).
+
+This app has been deployed directly to heroku since there is a script defined in package.json which will automatically handle building and deploying the app. For more information on deploying to heroku reference the extra resources at the bottom of this file.
+
+
 #### Final Product
 
 ![Photo5](client/public/Images/Screen5.png)
@@ -18,18 +30,6 @@
 ![Photo3](client/public/Images/Screen1.png)
 ![Photo4](client/public/Images/Screen3.png)
 
-
-## Getting Started
-This repository aims to assist a user in beginning work on a MERN stack application for heroku deployment with a solid file structure as a foundation. 
-
-- A ReactJS front end that uses jwt_passport for authentication and authorization .
-- A MongoDB Backend connection.
-- App  deployed directly to heroku since there a script defined in package.json which will automatically handle building and deploying the app
-
-Since this project will hold both the client application and the server application there will be node modules in two different places. First run `npm install` from the root. After this you will run `npm  install` from the root. Then create a `.env` file with your secret key, and MongoDB connection string. This is a script we have defined in package.json. Alternatively your group may choose to simplify this process by using yarn workspaces as specified [here](https://yarnpkg.com/lang/en/docs/workspaces/).
-Heroku only accept either or `yarn` `npm`
-
-This app has been deployed directly to heroku since there is a script defined in package.json which will automatically handle building and deploying the app. For more information on deploying to heroku reference the extra resources at the bottom of this file.
 
 ## Available Scripts
 
@@ -41,15 +41,11 @@ Runs both the client app and the server app in development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view the client in the browser.
 
 
-### `yarn workspace server build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `react-scripts build`
 
 If deploying to heroku this does not need to be run since it is handled by the heroku-postbuild script<br>
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 
 ## File structure
 #### `client` - Holds the client application

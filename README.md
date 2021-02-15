@@ -13,14 +13,14 @@
 
 ![Photo5](client/public/Images/Screen5.png)
 ![Photo6](client/public/Images/Screen6.png)
-![Photo1](client/public/Images/Screen4.png)
+![Photo1](client/public/Images/Screen7.png)
 ![Photo2](client/public/Images/Screen2.png)
 ![Photo3](client/public/Images/Screen1.png)
-![Photo4](client/public/Images/Screen4.png)
+![Photo4](client/public/Images/Screen3.png)
 
 
 ## Getting Started
-This repository aims to assist you in beginning work on a MERN stack application for heroku deployment with a solid file structure as a foundation. 
+This repository aims to assist a user in beginning work on a MERN stack application for heroku deployment with a solid file structure as a foundation. 
 
 - A ReactJS front end that uses jwt_passport for authentication and authorization .
 - A MongoDB Backend connection.

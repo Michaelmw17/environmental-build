@@ -13,8 +13,8 @@
 This repository aims to assist a user in beginning work on a MERN stack application for heroku deployment with a solid file structure as a foundation. 
 
 - A ReactJS front end that uses jwt_passport for authentication and authorization .
-- A MongoDB Backend connection.
-- App  deployed directly to heroku since there a script defined in package.json which will automatically handle building and deploying the app
+- A MongoDB Backend.
+- App deployed directly to heroku.
 
 Since this project will hold both the client application and the server application there will be node modules in two different places. First run `npm install` from the root. After this you will run `npm  install` from the root. Then create a `.env` file with your secret key, and MongoDB connection string. This is a script we have defined in package.json. Alternatively your group may choose to simplify this process by using yarn workspaces as specified [here](https://yarnpkg.com/lang/en/docs/workspaces/).
 

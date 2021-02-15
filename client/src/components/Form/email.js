@@ -55,13 +55,13 @@ export default function ContactForm() {
                         <label htmlFor="startDate">Start Date </label>
                         </div>
                         <div className="col-75">
-                        <input type="date" name="startDate" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"  required="required"/>
+                        <input type="date"  min="2021-01-01"  max="2022-01-01"   name="startDate" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"  required="required"/>
                         </div>
                         <div className="col-25">
                         <label htmlFor="endDate">End Date </label>
                         </div>
                         <div className="col-75">
-                        <input type="date" name="endDate"   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"  required="required"/>
+                        <input type="date" min="2021-01-01"  max="2022-01-01"    name="endDate"   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"  required="required"/>
                         </div>
                     </div>
                     <div className="row">

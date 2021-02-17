@@ -15,7 +15,7 @@
     text-align: center;
     font-size: 48px;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-
+  font-display: swap
 }
 @media only screen and (min-width:320px) and (max-width:725px){
   .container-about {
@@ -79,15 +79,12 @@
 .z-0 {
   z-index: 0;
 }
-
 .z-1 {
   z-index: 1;
 }
-
 .z-2 {
   z-index: 2;
 }
-
 /* Animations */
 .animated {
   -webkit-animation-duration: 0.4s;
@@ -95,7 +92,6 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -105,7 +101,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -115,13 +110,10 @@
     opacity: 1;
   }
 }
-
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-
-
 #wrap{
   background-color: #ddd;
   padding: 50px 0;

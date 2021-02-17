@@ -22,6 +22,13 @@
   margin-left: 20px;
   padding-left: 30px;
   padding-right: 20px;
+  margin-bottom: 30px;
+}
+.ButtonBases {
+  width: 80%; 
+  padding: 25px;
+  box-sizing: border-box;
+  margin: 0 1.5em 0 1.5em;
 }
 
 .header-title{
@@ -33,7 +40,6 @@
   padding: 10px;
   margin-top:290px;
   font-weight: 900;
-  
 }
 
 .section{
@@ -155,6 +161,14 @@ color: black !important;
     justify-content: center;
     margin-left: 40px;
   }
+}
+
+.btn-about {
+  margin-bottom: 40px;
+}
+
+#btn-align {
+  margin-bottom: 10px;
 }
 
 

@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import Spinner from 'react-bootstrap/Spinner'
 import MyComp from '../MyComp/myComp'
 import { useAppContext } from '../../store';
-import { Button, Icon } from 'semantic-ui-react'
-import './styles.css'
+import ButtonBases from '../ButtonHome/buttonHome'
+
+import "./styles.css";
+
 const Header = () => {
     const [state] = useAppContext();
     return(
@@ -26,37 +28,32 @@ const Header = () => {
                 </h1> 
                     Dual sectioned environmental house available for your next getaway in Possum Creek
             </span>
+            
         </div>
     );
 }
 
 const Card = (props) => {
-    return(
+    // const classes = useStyles();
+    return (
         <div className={props.className} >
             <div className="small-div">
-                <img src={props.img} alt=''/>
+                <img src={props.img} alt='' />
             </div>
-
             <div className="big-div">
                 <span className='div-title'>
                     {props.title}
                 </span>
-                <br/>
+                <br />
                 <span>
                     {props.description}
                 </span>
             </div>
-            <Button  animated  inverted color='teal'  style={{marginBottom:'30px'}}>
-                <Button.Content  visible>More Info/Gallery</Button.Content>
-                <Button.Content  hidden  href='./about'>
-                <Icon  name='arrow right' />
-                </Button.Content>
-            </Button>
         </div>
     )
-}
+};
 
-const CardBlue = (props) =>{
+const CardBlue = (props) => {
     return(
         <div className={props.className} >
             <div className="div-blue">
@@ -70,24 +67,17 @@ const CardBlue = (props) =>{
                     {props.description}
                 </span>
             </div>
-            <Button  animated  inverted color='teal'  style={{marginBottom:'30px'}}>
-                <Button.Content  visible>More Info/Gallery</Button.Content>
-                <Button.Content  hidden  href='./about'>
-                <Icon  name='arrow right' />
-                </Button.Content>
-            </Button>
-        </div>
+            </div>
     )
 }
 
 
-const HeaderCard = (props) =>{
+const HeaderCard = (props) => {
     return(
         <div className={props.className} >
             <div className="small-div">
                 <img src={props.img} alt=''/>
             </div>
-
             <div className="big-div">
                 <span className='div-title'>
                     {props.title}
@@ -97,12 +87,6 @@ const HeaderCard = (props) =>{
                     {props.description}
                 </span>
             </div>
-                <Button  animated  inverted color='olive' href='./enquire' style={{marginBottom:'30px', marginLeft: '30px'}} >
-                        <Button.Content  visible>Enquire</Button.Content>
-                            <Button.Content  hidden  >
-                                <Icon  name='arrow right' />
-                        </Button.Content>
-                </Button>
         </div>
     )
 }
@@ -115,12 +99,15 @@ function LandingJumbo() {
             <div style={{width: '100%', margin: 'auto'}}>
                 <div id='body'>
                     <Header />
+                    <div className='ButtonBases'>
+                        <ButtonBases />
+                    </div>
                             <HeaderCard 
                                 className='section bg-green'
                                 img='./'
                                 title='Introduction' 
                                 description='The location of Possum Creek is renowned for its beauty and handy location to Bangalow and the beaches of Byron Bay. Here you will find a special holiday getaway in a home lovingly constructed using timber and Mt Warning basalt rock. The main "Rosella" house with an outlook to rolling fields. Both accommodation options have access to sparkling clear swimming hole and rainforest pocket.'
-                                    />
+                                />
                             <Card 
                                 className='section bg-grey'
                                 img='./' 
@@ -135,7 +122,6 @@ function LandingJumbo() {
                                 '/>
                     </div>
             </div>
-                        
         );
     
 }

@@ -5,10 +5,25 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Href from "./Href";
+import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import { green } from '@material-ui/core/colors';
 
 import "./style.css";
 
-import { Button, Icon } from 'semantic-ui-react'
+const useStyles = makeStyles((theme) => ({
+  margin: {
+    margin: theme.spacing(1),
+  },
+}));
+
+const theme = createMuiTheme({
+  palette: {
+    primary: green,
+  },
+});
+
+
 const words = ['Hinterland getaways in spectacular location 495 Friday Hut Road, Possum Creek', 'Two accommodation options available', 'Main "Rosella" house 3 bedrooms', 'Flat "Bluebird" house 1 bedroom self-contained unit', 'Rustic clay tennis court', ' Set on rainforest pocket ', 'Plentiful water supply','Vegetable garden', 'Wildlife - Koalas, Platypus, Wallabies', 'Close to Bangalow and Byron Bay'];
 const items = words.map((word, e) => {
     return <li key={e}>{word}</li>;
@@ -36,14 +51,14 @@ const testData4 = {
   link: "https://harvestnewrybar.com.au"
 };
 
-const  SideDescription = ()  => {
+const SideDescription = () => {
+    const classes = useStyles();
         return (
             <div className="LocationHeader">
                 <Container>
                     <Row>
                         <div className="LocationFinePrint">
                             <Col md={12}>
-                               
                                     <ul> {items} </ul>
                             </Col>
                             <div className="LocationList">
@@ -82,15 +97,11 @@ const  SideDescription = ()  => {
                                 </ul>
                                 </div>
                             <Col md={12}>
-                              
-                                <Button  animated  inverted color='teal' href='./about'>
-                                <Button.Content  visible>Our Photo Gallery</Button.Content>
-                                <Button.Content  hidden  href='./about'>
-                                    <Icon  name='arrow right' />
-                                        </Button.Content>
-                                        
-                                    </Button>
-                                
+                                <ThemeProvider theme={theme}>
+                                <Button variant="contained" color="primary" className={classes.margin}>
+                                Theme Provider
+                                </Button>
+                                </ThemeProvider>
                             </Col>
                         </div>
                     </Row>

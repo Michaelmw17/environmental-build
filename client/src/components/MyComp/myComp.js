@@ -1,8 +1,13 @@
-import React from "react";
+import React, { Suspense } from "react";
+
+import Spinner from 'react-bootstrap/Spinner';
+
 
 
 const  MyComp = ()  => {
-    return <img src={process.env.PUBLIC_URL + '/EcoGetawayLogo.jpg'} alt="Logo" style={{ height: '180px', width: '150px'}}/>;
+    return<Suspense fallback={
+                            <Spinner animation="border" />
+                            }><img src={process.env.PUBLIC_URL + '/EcoGetawayLogo.jpg'} alt="Logo" style={{ height: '180px', width: '150px'}}/></Suspense> ;
 };
 
 

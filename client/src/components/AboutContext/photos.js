@@ -1,6 +1,8 @@
-import React, { lazyLoad } from "react";
+import React, { Suspense, lazyLoad } from "react";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
+
+import Spinner from 'react-bootstrap/Spinner';
 
 const images = [
             
@@ -80,7 +82,9 @@ const images = [
         
         class MyGalleryFirst extends React.Component {
         render() {
-            return <ImageGallery alt='Possum Creek Photos' lazyLoad={lazyLoad} items={images} />;
+            return  <Suspense fallback={
+                            <Spinner animation="border" />
+                            }><ImageGallery alt='Possum Creek Photos' lazyLoad={lazyLoad} items={images} /></Suspense>;
         }
         }
         export default MyGalleryFirst;

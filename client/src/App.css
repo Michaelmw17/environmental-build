@@ -14,11 +14,11 @@ html, body {
     background-color: #ffffff;
     height: 100%;
     margin: 0;
-     background-image: url(./components/assets/images/nature.jpg);
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-image: url(./components/assets/images/nature.webp);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1 {
@@ -29,6 +29,7 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 28px;
+    font-display: swap
 }
 
 h3 {
@@ -37,7 +38,6 @@ h3 {
     margin-left: 10px;
     text-align: left;
     padding-top: 20px;
-    /* padding-bottom: 20px; */
     font-size: 28px;
 }
 
@@ -46,8 +46,6 @@ h5 {
     color: #212121;
     margin-left: 10px;
     text-align: center;
-    /* padding-top: 20px; */
-    /* padding-bottom: 20px; */
     font-size: 20px;
 }
 aboutDescriptionParagraph{
@@ -62,13 +60,10 @@ font-size: 14px;
     body {
         background-color: #ff0000;
     }
-
-    /* The container width will be 225px */
     .container,
     .footer {
         width: 100%;
     }
-
     .form-group,
     .form-control {
         font-size: 16px;

@@ -98,8 +98,8 @@ const SideDescription = () => {
                                 </div>
                             <Col md={12}>
                                 <ThemeProvider theme={theme}>
-                                <Button variant="contained" color="primary" className={classes.margin}>
-                                Theme Provider
+                                <Button variant="outlined" href="./about" className={classes.margin}>
+                                  Photos
                                 </Button>
                                 </ThemeProvider>
                             </Col>

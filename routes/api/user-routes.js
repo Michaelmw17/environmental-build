@@ -52,7 +52,6 @@ router.post('/api/register', (req, res) => {
 });
 
 router.post('/api/login', (req, res) => {
-
     // Form validation
     const { errors, isValid } = validateLoginInput(req.body);
 

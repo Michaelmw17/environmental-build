@@ -48,10 +48,13 @@ h5 {
     text-align: center;
     font-size: 20px;
 }
-aboutDescriptionParagraph{
-font-size: 14px;
+.aboutDescriptionParagraph{
+    font-size: 18px;
     line-height: 115%;
     text-align: justify;
+    word-spacing: normal;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 /* These rules take effect when the browser's width */
 /* is either 225px or more. */
@@ -82,6 +85,12 @@ font-size: 14px;
     .labelText {
         font-size: 20px;
     }
+    .aboutDescriptionParagraph{
+    font-size: 19px;
+    line-height: 115%;
+    text-align: justify;
+    word-spacing: normal;
+}
 }
 /* These rules take effect when the browser's width */
 /* is either 320px or more. */
@@ -111,7 +120,7 @@ font-size: 14px;
     text-align: justify;
     }
     .ListItems{
-        font-size: 14px;
+        font-size: 16px;
         line-height: 115%;
     }
     .navLogo {

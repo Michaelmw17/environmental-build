@@ -37,10 +37,10 @@ class AboutDescription extends Component {
                         <div className="container-about">
                         <div className="aboutDescription">
                             <Row>
-                                <Col xs={12} sm={12} md={4} lg={4} className='ListItems'>
+                                <Col xs={12} sm={12} md={12} lg={4} className='ListItems'>
                                     <ul> {items} </ul>
                                 </Col>
-                                    <Col xs={12} sm={12} md={8} lg={8}>
+                                    <Col xs={12} sm={12} md={12} lg={8}>
                                         <div className='aboutDescriptionParagraphDiv'>
                                                 <p className='aboutDescriptionParagraph'>
                                                 The location of Possum Creek is renowned for its beauty and handy location to Bangalow and the beaches of Byron Bay. Here you will find a special home lovingly constructed using timber and Mt Warning basalt rock. The house outlook is North and overlooking rolling fields With a sparkling clear waterhole a short walk through the Rainforest pocket away this property will provide its new owners with a brilliant hinterland lifestyle.

@@ -2,16 +2,21 @@
 .LocationHeader {
   margin: 30px;
   margin-top: 70px;
-  
 }
 .LocationFinePrint {
-     background-color: rgb(58,181,74);
-border-radius: 25px;
+  padding: 10px;
+  padding-top: 140px;
+  background-color: rgb(58,181,74);
+  border-radius: 25px;
   border: 1px solid rgb(58,181,74);
- font-size: 16px;
- font-weight: 800;
- word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 800;
+  word-wrap: break-word;
+  padding-bottom: 170px;
 }
 .LocationH1 {
   color: white
+}
+ul {
+  padding-bottom: 10px;
 }

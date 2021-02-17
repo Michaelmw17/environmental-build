@@ -1,11 +1,10 @@
 import React, { useState, Suspense } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 // eslint-disable-next-line 
 import { registerUser, getUsers } from '../../utils/userApis';
 import { checkFormFields } from './checkFormFields';
 import Spinner from 'react-bootstrap/Spinner'
 import MyComp from '../MyComp/myComp'
-
 import './styles.css'
 import Footer from '../Footer'
 
@@ -62,11 +61,13 @@ function Register(props) {
                     <form noValidate onSubmit={onSubmit}>
                         <h1 className="mb-3 h3 font-weight normal">Please Register</h1>
                         <div className="EcoPhoto">
-                        <Suspense fallback={
-                            <Spinner animation="border" />
-                            }>
-                                <MyComp /> 
-                            </Suspense>
+                        <Link to="/" >
+                            <Suspense fallback={
+                                        <Spinner animation="border" />
+                                        }>
+                                            <MyComp /> 
+                                </Suspense>
+                            </Link>
                         </div>
                         <div className="form-group">
                             <label htmlFor="first_name">First Name</label>

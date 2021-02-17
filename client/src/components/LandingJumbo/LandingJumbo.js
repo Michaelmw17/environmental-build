@@ -7,10 +7,12 @@ import { useAppContext } from '../../store';
 import ButtonBases from '../ButtonHome/buttonHome'
 
 import "./styles.css";
+import { Container } from 'react-bootstrap';
 
 const Header = () => {
     const [state] = useAppContext();
     return(
+         <Container  fluid>
         <div className='header'>
             <span className='header-title'>
                 <Link to="/" >
@@ -25,17 +27,18 @@ const Header = () => {
             <span className="header-text">
                 <h1>
                 Welcome {state.user.first_name} {state.user.last_name}
-                </h1> 
-                    Dual sectioned environmental house available for your next getaway in Possum Creek
-            </span>
-            
-        </div>
+                </h1>
+                Please Register or Sign in in to book your next stay!
+                    </span>
+            </div>
+        </Container>
     );
 }
 
 const Card = (props) => {
     // const classes = useStyles();
     return (
+        <Container  fluid>
         <div className={props.className} >
             <div className="small-div">
                 <img src={props.img} alt='' />
@@ -49,12 +52,14 @@ const Card = (props) => {
                     {props.description}
                 </span>
             </div>
-        </div>
+            </div>
+        </Container>
     )
 };
 
 const CardBlue = (props) => {
-    return(
+    return (
+         <Container  fluid>
         <div className={props.className} >
             <div className="div-blue">
             </div>
@@ -68,12 +73,14 @@ const CardBlue = (props) => {
                 </span>
             </div>
             </div>
+        </Container>
     )
 }
 
 
 const HeaderCard = (props) => {
-    return(
+    return (
+         <Container  fluid>
         <div className={props.className} >
             <div className="small-div">
                 <img src={props.img} alt=''/>
@@ -87,7 +94,8 @@ const HeaderCard = (props) => {
                     {props.description}
                 </span>
             </div>
-        </div>
+            </div>
+        </Container>
     )
 }
 
@@ -98,10 +106,13 @@ function LandingJumbo() {
         return (
             <div style={{width: '100%', margin: 'auto'}}>
                 <div id='body'>
+                    
                     <Header />
+                   
                     <div className='ButtonBases'>
                         <ButtonBases />
-                    </div>
+                        </div>
+                    
                             <HeaderCard 
                                 className='section bg-green'
                                 img='./'
@@ -120,6 +131,7 @@ function LandingJumbo() {
                                 title='Bluebird - 1 Bed'
                                 description='Self contained has 1 bedrooms with access to sparkling swimming hole. NBN, drinking water filtered from tank. Maximum 2 people with minimum 2 night stay.
                                 '/>
+                    
                     </div>
             </div>
         );

@@ -10,7 +10,7 @@ import Enquire from './components/pages/Enquire/enquire';
 import About from './components/pages/About/about';
 import Locations from './components/pages/Location/locations';
 import MenuBar from './components/AppNav/hamburgerNav';
-
+import SideBarNav from './components/AppNav/hamburgerNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AppContextProvider } from './store';
 
@@ -22,6 +22,7 @@ function App() {
         <AppContextProvider>
             <Router>
                 <div className="pl-0 pr-0 m-0 container-fluid">
+                    <SideBarNav />
                     <Navbar />
                     <Route exact path="/" component={Landing} />
                     <div className="p-0 m-0 container-fluid">

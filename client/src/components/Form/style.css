@@ -130,7 +130,7 @@ width: '100%';
 
 .field label {
   display: block;
-  font-size: 12px;
+  font-size: 16px;
   color: #777;
 }
 
@@ -138,13 +138,13 @@ width: '100%';
   display: block;
   min-width: 250px;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 input[type="submit"] {
   display: block;
   padding: 6px 30px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #2a5eec;
   color: #fff;
   border: none;

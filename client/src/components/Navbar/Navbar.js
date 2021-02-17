@@ -1,10 +1,27 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import {  useHistory } from 'react-router-dom';
 import { useAppContext } from '../../store';
 import { setUserLogout } from '../../actions';
 import './style.css';
+import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import { green } from '@material-ui/core/colors';
+
+
+const useStyles = makeStyles((theme) => ({
+  margin: {
+    margin: theme.spacing(1),
+  },
+}));
+
+const theme = createMuiTheme({
+  palette: {
+    primary: green,
+  },
+});
 
 function Navbar() {
+    const classes = useStyles();
     const history = useHistory();
     const [state, dispatch] = useAppContext();
 
@@ -18,32 +35,58 @@ function Navbar() {
 
     const loginRegLink = (
         <ul className="navbar-nav list-group list-group-horizontal">
-            <li>
-                <Link className="mb-1 mr-1 btn btn-sm bg-info active" to="/login">
-                    Login
-                </Link>
+            
+                <li>
+                <ThemeProvider theme={theme}>
+                        <Button color="primary" variant="contained"  href="/login" className={classes.margin}>
+                        Login
+                        </Button>
+                    </ThemeProvider>
             </li>
-            <li>
-                <Link className="btn btn-sm bg-info active" to="/register">
-                    Register
-                </Link>
+                <li>
+                <ThemeProvider theme={theme}>
+                        <Button color="primary" variant="contained"  href="/register" className={classes.margin}>
+                        Register
+                        </Button>
+                    </ThemeProvider>
             </li>
+            
+            
         </ul>
     );
     const userLink = (
-        <ul className="navbar-nav list-group list-group-horizontal mr-auto">
+        <ul className="navbar-nav list-group list-group-horizontal ">
             <li>
-                <Link className="mb-1 mr-1  btn btn-sm bg-info active" to="/">
-                    Home
-                </Link>
+                <ThemeProvider theme={theme}>
+                        <Button color="primary" variant="contained" href="./" className={classes.margin}>
+                        home
+                        </Button>
+                    </ThemeProvider>
             </li>
             <li>
-                <Link className="mb-1 mr-1 btn btn-sm bg-info active" to="/profile">
-                    Dashboard
-                </Link>
+                <ThemeProvider theme={theme}>
+                        <Button color="primary" variant="contained"  href="./profile" className={classes.margin}>
+                        DashBoard
+                        </Button>
+                    </ThemeProvider>
             </li>
             <li>
-                <button
+                <ThemeProvider theme={theme}>
+                    <Button color="secondary" variant="contained"href="./"
+                        className={classes.margin} 
+                        
+                    id="logoutBtn"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                    onClick={handleLogOut}>
+                        Logout
+                        </Button>
+                    </ThemeProvider>
+            </li>
+            
+            <li>
+            
+                {/* <button
                     className="btn btn-sm bg-info active"
                     id="logoutBtn"
                     data-toggle="modal"
@@ -51,7 +94,7 @@ function Navbar() {
                     onClick={handleLogOut}
                 >
                     <div>Logout</div>
-                </button>
+                </button> */}
             </li>
         </ul>
     );

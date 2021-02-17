@@ -28,7 +28,7 @@ const Header = () => {
                 <h1>
                 Welcome {state.user.first_name} {state.user.last_name}
                 </h1>
-                Please Register or Sign in in to book your next stay!
+                Please Sign in/Register  to book your next stay!
                     </span>
             </div>
         </Container>

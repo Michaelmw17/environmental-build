@@ -20,15 +20,15 @@ const SideBarNav = ()  => {
                     </Link>
                                 <hr className="sidebar-divider d-none d-md-block" />
                     <Link className="menu-item" to="/locations">
-                Location
+                    Location
                     </Link>
                                 <hr className="sidebar-divider d-none d-md-block" />
                     <Link className="menu-item" to="/profile"  >
-                Profile
+                    Profile
                     </Link>
                                     <hr className="sidebar-divider d-none d-md-block" />
                     <Link  className="menu-item" to="/login">
-                Login
+                    Login
                     </Link>
             
         </Menu>

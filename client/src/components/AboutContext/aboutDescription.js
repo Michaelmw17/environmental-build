@@ -1,12 +1,23 @@
 
-import React, { Component} from 'react';
+import React, { Component, Suspense} from 'react';
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import HeaderAbout from './AboutHeader'
-import SecondCarousel from './secondPhotos';
-import Carousel from './photos'
+// import SecondCarousel from './secondPhotos';
+// import Carousel from './photos'
 import "./styles.css";
+import { lazy } from '@loadable/component'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
+
+const Carousel = lazy(() => import('./photos'), {
+    fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
+})
+const SecondCarousel = lazy(() => import('./secondPhotos'), {
+    fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
+})
+
 
 const words = ['Hinterland getaways in spectacular location 495 Friday Hut Road, Possum Creek', 'Two accommodation options available', 'Main "Rosella" house 3 bedrooms', 'Flat "Bluebird" house 1 bedroom self-contained unit', 'Rustic clay tennis court', ' Set on rainforest pocket ', 'Plentiful water supply','Vegetable garden', 'Wildlife - Koalas, Platypus, Wallabies', 'Close to Bangalow and Byron Bay'];
 const items = words.map((word, e) => {
@@ -24,11 +35,15 @@ class AboutDescription extends Component {
                     <Container>
                         <div className="PhotoGallery">
                         <Row>
-                        <Col xs={12} sm={12} md={12} lg={6}>
-                                    <Carousel />
+                                <Col xs={12} sm={12} md={12} lg={6}>
+                                    <Suspense fallback={<div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>}>
+                                        <Carousel />
+                                    </Suspense>
                             </Col>
-                                <Col xs={12} sm={12}  md={12} lg={6}>
-                                    <SecondCarousel/>
+                                <Col xs={12} sm={12} md={12} lg={6}>
+                                      <Suspense fallback={<div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>}>
+                                        <SecondCarousel />
+                                    </Suspense>
                                 </Col> 
                             </Row>
                             </div>

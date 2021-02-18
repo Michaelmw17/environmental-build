@@ -1,21 +1,27 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import "./style.css";
-// import ScrollAnimation from 'react-animate-on-scroll'
-// import Pulse from 'react-reveal/Pulse';
 import SideBarNav from '../../AppNav/hamburgerNav';
-import AboutDescription from '../../AboutContext/aboutDescription'
+// import AboutDescription from '../../AboutContext/aboutDescription'
 import Navbar from '../../Navbar/Navbar';
 import Footer from '../../Footer'
+import { lazy } from '@loadable/component'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 
+const AboutDescription = lazy(() => import('../../LandingJumbo/LandingJumbo'), {
+    fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
+})
 class About extends React.Component {
     render() {
         return (<div>
             <div className="landing-grid-about">
                 <SideBarNav pageWrapId={"page-wrap"} outerContainerId={"App"} />
                 {/* <Pulse> */}
-                <Navbar /> 
+                <Navbar />
+                <Suspense fallback={<div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>}>
                     <AboutDescription />
-                </div>
+                </Suspense>
+            </div>
             <Footer />
         </div>
         );

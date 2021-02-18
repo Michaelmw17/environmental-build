@@ -20,14 +20,14 @@
   width: 100%;
   text-align: center;
   margin-left: 20px;
-  padding-left: 30px;
-  padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
   margin-bottom: 30px;
 }
 .ButtonBases {
-  width: 80%; 
+  width: 90%; 
   padding: 25px;
-  padding-left: 30px;
+  padding-left: 0px;
   padding-right: 25px;
   box-sizing: border-box;
   margin: 0 .5em 0 .5em;
@@ -46,7 +46,7 @@
 
 .section{
     flex-flow: row wrap;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row wrap;
     align-items: center;
@@ -163,6 +163,14 @@ color: black !important;
     justify-content: center;
     margin-left: 40px;
   }
+  .ButtonBases {
+  width: 90%; 
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  margin: 0 .5em 0 .5em;
+}
 }
 
 .btn-about {

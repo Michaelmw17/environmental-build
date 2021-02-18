@@ -1,13 +1,24 @@
-import React from 'react';
-import LandingJumbo from "../../LandingJumbo/LandingJumbo";
+import React, {Suspense} from 'react';
+// import LandingJumbo from "../../LandingJumbo/LandingJumbo";
 // import SideBarNav from '../../AppNav/hamburgerNav';
 import Footer from '../../Footer'
+import { lazy } from '@loadable/component'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
+
+const LandingJumbo = lazy(() => import('../../LandingJumbo/LandingJumbo'), {
+    fallback: <div><Loader type="Rings"
+        color="#00BFFF"
+        timeout={9000}
+        height={80} width={80} /></div>
+})
 
 function DashBoard() {
     return (<div>
-        {/* <SideBarNav pageWrapId={"page-wrap"} outerContainerId={"App"} /> */}
         <div className="pl-0 container landing">
-            <LandingJumbo />
+            <Suspense fallback={<div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>}>
+                <LandingJumbo />
+            </Suspense>
         </div>
         <Footer />
         </div>

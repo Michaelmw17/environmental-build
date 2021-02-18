@@ -36,13 +36,9 @@ const Header = () => {
 }
 
 const Card = (props) => {
-    // const classes = useStyles();
     return (
         <Container  fluid>
         <div className={props.className} >
-            <div className="small-div">
-                <img src={props.img} alt='' />
-            </div>
             <div className="big-div">
                 <span className='div-title'>
                     {props.title}
@@ -61,8 +57,6 @@ const CardBlue = (props) => {
     return (
          <Container  fluid>
         <div className={props.className} >
-            <div className="div-blue">
-            </div>
             <div className="big-div">
                 <span className='div-title'>
                     {props.title}
@@ -82,9 +76,6 @@ const HeaderCard = (props) => {
     return (
          <Container  fluid>
         <div className={props.className} >
-            <div className="small-div">
-                <img src={props.img} alt=''/>
-            </div>
             <div className="big-div">
                 <span className='div-title'>
                     {props.title}
@@ -106,32 +97,25 @@ function LandingJumbo() {
         return (
             <div style={{width: '100%', margin: 'auto'}}>
                 <div id='body'>
-                    
                     <Header />
-                   
                     <div className='ButtonBases'>
                         <ButtonBases />
                         </div>
-                    
                             <HeaderCard 
                                 className='section bg-green'
-                                img='./'
                                 title='Introduction' 
                                 description='The location of Possum Creek is renowned for its beauty and handy location to Bangalow and the beaches of Byron Bay. Here you will find a special holiday getaway in a home lovingly constructed using timber and Mt Warning basalt rock. The main "Rosella" house with an outlook to rolling fields. Both accommodation options have access to sparkling clear swimming hole and rainforest pocket.'
                                 />
                             <Card 
                                 className='section bg-grey'
-                                img='./' 
                                 title='Rosella - 3 Bed'
                                 description='Main house has 3 bedrooms with loft. Access to sparkling swimming hole and rustic tennis court. NBN, solar, drinking water filtered from tank. Maximum 6 people with minimum 2 night stay.
                                 '/>
                                 <CardBlue 
                                 className='section bg-grey-second'
-                                img='./' 
                                 title='Bluebird - 1 Bed'
                                 description='Self contained has 1 bedrooms with access to sparkling swimming hole. NBN, drinking water filtered from tank. Maximum 2 people with minimum 2 night stay.
                                 '/>
-                    
                     </div>
             </div>
         );

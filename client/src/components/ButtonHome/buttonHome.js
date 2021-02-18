@@ -7,26 +7,26 @@ import { Link as RouterLink } from 'react-router-dom';
 
 const images = [
     {
-        url: './Images/image2.jpg',
+        url: './Images/image2.webp',
         title: 'About',
         width: '50%',
         siteUrl: "/about",
     },
     {
-        url: './Images/image3.jpg',
+        url: './Images/image3.webp',
         title: 'Location',
         width: '50%',
         siteUrl: "/locations",
     },
     {
-        url: './Images/image4.jpg',
+        url: './Images/image4.webp',
         src: './about',
         title: 'Enquire',
         width: '50%',
         siteUrl: "/enquire",
     },
     {
-    url: './Images/image23.jpg',
+    url: './Images/image23.webp',
     title: 'Profile',
     width: '50%',
         siteUrl: "/profile",

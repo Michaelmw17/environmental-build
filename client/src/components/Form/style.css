@@ -113,7 +113,7 @@ width: '100%';
 }
 .FormFinePrint {
   padding: 10px 60px 10px 60px; 
-  word-wrap: wrap;
+  word-wrap: break-word;
 }
 .Form-date {
   padding-top: 30px;

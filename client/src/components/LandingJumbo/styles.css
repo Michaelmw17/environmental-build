@@ -27,7 +27,7 @@
 .ButtonBases {
   width: 90%; 
   padding: 25px;
-  padding-left: 0px;
+  padding-left: 10px;
   padding-right: 25px;
   box-sizing: border-box;
   margin: 0 .5em 0 .5em;
@@ -164,12 +164,12 @@ color: black !important;
     margin-left: 40px;
   }
   .ButtonBases {
-  width: 90%; 
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 25px;
+  width: 60%; 
+  padding: 1px;
+  padding-left: 0px;
+  padding-right: 35px;
   box-sizing: border-box;
-  margin: 0 .5em 0 .5em;
+  
 }
 }
 

@@ -62,6 +62,7 @@ h5 {
     /* The body background color will be #ff0000 */
     body {
         background-color: #ff0000;
+        height: 100%;
     }
     .container,
     .footer {

@@ -8,7 +8,7 @@ import Spinner from 'react-bootstrap/Spinner'
 import MyComp from '../MyComp/myComp'
 import Footer from '../Footer'
 import { Link } from 'react-router-dom';
-import './styles.css'
+import './stylesLogin.css'
 function Login() {
     const history = useHistory();
 
@@ -49,6 +49,7 @@ function Login() {
     };
 
     return (
+        <div className='outerContainer'>
         <div className="container">
             <div className="row">
                 <div className="mx-auto mt-5 col-md-6">
@@ -91,8 +92,8 @@ function Login() {
                     </form>
                 </div>
             </div>
-            
- <Footer />
+            <Footer />
+            </div>
         </div>
     );
 }

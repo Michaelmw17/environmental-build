@@ -239,3 +239,6 @@ button .icon {
   margin: 0;
   flex: 1;
 }
+.container {
+      height: 100vw;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Href from "../LocationInfo/Href";
+import './stlyes.css'
 
 const stickyFooterStyle = {
 backgroundColor: "#D3D3D3",
@@ -18,7 +19,8 @@ position: "fixed",
 left: "0",
 bottom: "0",
 width: "100%",
-opacity: "0.5"
+opacity: "0.5",
+
 };
 
 const testData = {

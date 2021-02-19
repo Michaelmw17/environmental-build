@@ -1,5 +1,5 @@
 import React, {lazy, Suspense} from 'react';
-import "./style.css";
+import "./styleLocation.css";
 import SideBarNav from '../../AppNav/hamburgerNav';
 import LocationDescription from '../../LocationDescription/locationJumbo';
 import Col from 'react-bootstrap/Col'
@@ -42,7 +42,7 @@ function Locations() {
                               <WrappedMap
                                     googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyDClsZrp7BOREKiMZvP3P8lZhdh3UCFkqE`}
                                     loadingElement={<div style={{ height: `100%` }} />}
-                                    containerElement={<div style={{ height: `97vh`, marginLeft: '60px', marginRight: '60px', marginTop: '60px'}} />}
+                                    containerElement={<div style={{ height: `97vh`, marginLeft: '60px', marginRight: '60px', marginTop: '60px', marginBottom: '160px'}} />}
                                     mapElement={<div style={{ height: `100%`, borderRadius: '10px' }} />}
                               />
                             </Suspense>

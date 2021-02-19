@@ -5,7 +5,7 @@ import { registerUser, getUsers } from '../../utils/userApis';
 import { checkFormFields } from './checkFormFields';
 import Spinner from 'react-bootstrap/Spinner'
 import MyComp from '../MyComp/myComp'
-import './styles.css'
+import './stylesRegister.css'
 import Footer from '../Footer'
 
 function Register(props) {
@@ -55,7 +55,8 @@ function Register(props) {
     };
 
     return (
-        <div className="container">
+        <div className='outerContainer'>
+        <div className="containerRegister">
             <div className="row">
                 <div className="mx-auto mt-5 col-md-6">
                     <form noValidate onSubmit={onSubmit}>
@@ -128,6 +129,7 @@ function Register(props) {
                 </div>
             </div>
             <Footer />
+            </div>
         </div>
     );
 }

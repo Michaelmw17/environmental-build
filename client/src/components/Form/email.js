@@ -25,7 +25,7 @@ render() {
           />
         ) : null}
         <iframe
-                            id="JotFormIFrame-210483002658046"
+                            id="JotFormIFrame-210464245644857"
                             title="my Contact"
                             onload="window.parent.scrollTo(0,0)"
                             allowtransparency="true"
@@ -33,7 +33,7 @@ render() {
                             allow="geolocation; microphone; camera"
                             src="https://form.jotform.com/210464245644857"
                             frameborder="0"
-                            style={{paddingTop:'40px',minWidth: '100%',height:'200vh',
+                            style={{paddingTop:'40px',minWidth: '100%',height:'300vh',
                             border:'none'}}
                             scrolling="no"
                             >

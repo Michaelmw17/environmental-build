@@ -56,7 +56,7 @@ function Register(props) {
 
     return (
         <div className='outerContainer'>
-        <div className="containerRegister">
+        <div className="container ">
             <div className="row">
                 <div className="mx-auto mt-5 col-md-6">
                     <form noValidate onSubmit={onSubmit}>

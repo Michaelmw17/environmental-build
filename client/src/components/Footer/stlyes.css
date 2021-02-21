@@ -2,12 +2,13 @@
 html,body {
 	margin:0;
 	padding:0;
-	height:100%; /* needed for container min-height */
+	height:100vw; /* needed for container min-height */
 	background:gray;
 	
 	font-family:arial,sans-serif;
 	font-size:small;
 	color:#666;
+
 }
 
 h1 { 
@@ -35,9 +36,9 @@ div#container {
 	background:#f0f0f0;
 	
 	height:auto !important; /* real browsers */
-	height:100%; /* IE6: treaded as min-height*/
+	height:50%; /* IE6: treaded as min-height*/
 
-	min-height:100%; /* real browsers */
+	min-height:50%; /* real browsers */
 }
 
 div#header {
@@ -67,6 +68,6 @@ div#footer {
 	border-top:6px double gray;
 }
 	div#footer p {
-		padding:1em;
+		padding:1.5em;
 		margin:0;
 	}

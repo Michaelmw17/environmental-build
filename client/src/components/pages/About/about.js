@@ -8,7 +8,7 @@ import { lazy } from '@loadable/component'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 
-const AboutDescription = lazy(() => import('../../LandingJumbo/LandingJumbo'), {
+const AboutDescription = lazy(() => import('../../AboutContext/aboutDescription'), {
     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
 })
 class About extends React.Component {
@@ -22,7 +22,8 @@ class About extends React.Component {
                     <AboutDescription />
                 </Suspense>
             </div>
-            <Footer />
+                <Footer />
+            
         </div>
         );
     }

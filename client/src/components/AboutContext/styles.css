@@ -3,12 +3,17 @@
 .AboutUl {
     font-size: 1rem;
     color: white;
+     height: 200vw;
 }
 .PhotoGallery {
     padding-top: 20px;
 }
 .aboutDescription p {
     color:white
+    
+}
+.outerContainer {
+    height: 200vw;
 }
 .aboutHeader {
     padding-top: 60px;
@@ -36,6 +41,7 @@
   justify-content: space-between;
   width:90%;
 }
+
 .bg-near-white {
   background-color: #f4f4f4;
 }

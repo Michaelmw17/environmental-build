@@ -10,6 +10,32 @@ import "./styles.css";
 import { lazy } from '@loadable/component'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
+import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import { green } from '@material-ui/core/colors';
+
+import styled from "styled-components";
+const StyledButton = styled(Button)`
+  background: linear-gradient(45deg, #D3959B 30%, #1D976C 90%);
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  height: 48px;
+  padding: 0 30px;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .30);
+`;
+
+const useStyles = makeStyles((theme) => ({
+  margin: {
+    margin: theme.spacing(1),
+  },
+}));
+
+const theme = createMuiTheme({
+  palette: {
+    primary: green,
+  },
+});
 
 const Carousel = lazy(() => import('./photos'), {
     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
@@ -65,6 +91,9 @@ class AboutDescription extends Component {
                                                 This holiday getaway has it all in a low environmental impact home. Environmental features include rainforest pockets, access to Opussum creek swimming hole, pristine koala, abundant birdlife, wallabies and platypus habitat. The home is solar powered with plentiful raintank sourced water. Enjoy the comforts of a cosy home with a fireplace and NBN access in a pristine environment.
                                                 </p>
                                         </div>
+                                         <StyledButton  href="./locations" >
+                                      Location
+                                  </StyledButton>
                                     </Col>
                                 </Row>
                             </div>

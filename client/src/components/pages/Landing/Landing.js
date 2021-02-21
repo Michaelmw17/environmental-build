@@ -1,6 +1,4 @@
 import React, {Suspense} from 'react';
-// import LandingJumbo from "../../LandingJumbo/LandingJumbo";
-// import SideBarNav from '../../AppNav/hamburgerNav';
 import Footer from '../../Footer'
 import { lazy } from '@loadable/component'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";

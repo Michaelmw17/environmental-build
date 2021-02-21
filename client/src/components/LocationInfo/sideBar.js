@@ -5,11 +5,21 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Href from "./Href";
-import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { green } from '@material-ui/core/colors';
 
-import "./style.css";
+import "./styleLocation.css";
+import styled from "styled-components";
+const StyledButton = styled(Button)`
+  background: linear-gradient(45deg, #D3959B 30%, #1D976C 90%);
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  height: 48px;
+  padding: 0 30px;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .30);
+`;
 
 const useStyles = makeStyles((theme) => ({
   margin: {
@@ -52,7 +62,6 @@ const testData4 = {
 };
 
 const SideDescription = () => {
-    const classes = useStyles();
         return (
             <div className="LocationHeader">
                 <Container>
@@ -96,12 +105,10 @@ const SideDescription = () => {
                                 </li>
                                 </ul>
                                 </div>
-                            <Col md={12}>
-                                <ThemeProvider theme={theme}>
-                                <Button variant="outlined" href="./about" className={classes.margin}>
-                                  Photos
-                                </Button>
-                                </ThemeProvider>
+                        <Col md={12}>
+                          <StyledButton  href="./about" >
+                                      Photos
+                                  </StyledButton>
                             </Col>
                         </div>
                     </Row>

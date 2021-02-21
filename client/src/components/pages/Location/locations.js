@@ -1,15 +1,17 @@
-import React, {lazy, Suspense} from 'react';
+
+import React, { lazy, Suspense } from 'react';
 import "./styleLocation.css";
 import SideBarNav from '../../AppNav/hamburgerNav';
 import LocationDescription from '../../LocationDescription/locationJumbo';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Navbar from '../../Navbar/Navbar' 
 import Footer from '../../Footer'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
+import NavBar from '../../Navbar/Navbar'
 
-const WrappedMap = lazy(() => import('../../Google/googleApi'), {
+require('dotenv').config()
+const MyComponent = lazy(() => import('../../Google/Googlemap'), {
   fallback: <div><Loader
     type="Rings"
     color="#00BFFF"
@@ -26,34 +28,31 @@ const SideDescription = lazy(() => import('../../LocationInfo/sideBar'), {
 function Locations() {
     return (
       <div className="landing-grid-about">
+        <NavBar />
         <SideBarNav pageWrapId={"page-wrap"} outerContainerId={"App"} />
-        <Navbar />
-        <LocationDescription />
+            <LocationDescription />
                       <div className='topContainer'>    <div className="google-apps">
                             <Row>
-                                  <Suspense fallback={<div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>}>
+                            <Suspense fallback={
+                              <div>
+                                <Loader type="Rings" color="#00BFFF" height={80} width={80} />
+                              </div>}>
                               <Col xs={12} md={12} lg={6}>
                                   <SideDescription/>
                                 </Col>
                             </Suspense>
                         <Col xs={12} md={12} lg={6}>
-              <div className="google-plus">
-                <Suspense fallback={<div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>}>
-                              <WrappedMap
-                                    googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyDClsZrp7BOREKiMZvP3P8lZhdh3UCFkqE`}
-                                    loadingElement={<div style={{ height: `100%` }} />}
-                                    containerElement={<div style={{ height: `97vh`, marginLeft: '60px', marginRight: '60px', marginTop: '60px', marginBottom: '160px'}} />}
-                                    mapElement={<div style={{ height: `100%`, borderRadius: '10px' }} />}
-                              />
+                  <div className="google-plus">
+                    <Suspense fallback={<div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>}>
+                  <MyComponent/>
                             </Suspense>
                             </div>
                         </Col>
                       </Row>
                 </div>
-        </div>
-        
- <Footer />
             </div>
+        <Footer />
+      </div>
     );
 }
 

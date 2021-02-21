@@ -1,58 +1,81 @@
 import React, {Suspense} from 'react';
 import { useAppContext } from '../../store';
-// import SideBarNav from '../AppNav/hamburgerNav';
 import Footer from '../Footer'
 import Spinner from 'react-bootstrap/Spinner'
 import MyComp from '../MyComp/myComp'
-import { Card, Table } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import Paper from '@material-ui/core/Paper';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Avatar from '@material-ui/core/Avatar';
+import Typography from '@material-ui/core/Typography';
 
-import './styles.css'
-function Profile() {
+    const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+        overflow: 'hidden',
+        padding: theme.spacing(0, 3),
+    },
+    paper: {
+        maxWidth: 400,
+        margin: `${theme.spacing(1)}px auto`,
+        padding: theme.spacing(2),
+    },
+    }));
+
+
+export default function Profile() {
+    const classes = useStyles();
     const [authState] = useAppContext();
 
-    return (
-        <div className="pl-0 m-0 container-fluid profile">
-            {/* <SideBarNav pageWrapId={"page-wrap"} outerContainerId={"App"} /> */}
-            {/* <Sidebar /> */}
-            <div className="flex-row-reverse mt-5 mr-6 d-flex">
-                <div className="col-xs-12 col-sm-12 col-md-12  ">
-                    <div className="mx-auto col-sm-12">
-                        
-                    <div className="ProfileEco">
-                        <Link to="/" >
-                            <Suspense fallback={
-                                        <Spinner animation="border" />
-                                        }>
-                                            <MyComp /> 
-                                </Suspense>
-                            </Link>
-                            <h1 className="text-center">Eco Profile</h1>
+        return (
+        
+            <div className={classes.root}>
+                        <div className="mx-auto col-12">
+                            <div className="ProfileEco">
+                                <Link to="/" >
+                                    <Suspense fallback={
+                                                <Spinner animation="border" />
+                                                }>
+                                                    <MyComp /> 
+                                        </Suspense>
+                                </Link>
+                            </div>
                         </div>
-                    </div>
-                    <Table className="table mx-auto col-md-6 col-sm-4" style={{borderRadius:"60px"}}>
-                        <Card className="CardProfile">
-                        <tbody className="info" >
-                            <tr>
-                                <td>First Name</td>
-                                <td>{authState.user.first_name}</td>
-                            </tr>
-                            <tr>
-                                <td>Last Name</td>
-                                <td>{authState.user.last_name}</td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>{authState.user.email}</td>
-                            </tr>
-                            </tbody>
-                            </Card>
-                    </Table>
-                    <Footer />
-                </div>
-            </div>
+        <Paper className={classes.paper}>
+            <Grid container wrap="nowrap" spacing={2}>
+                        <Grid item>
+            <Avatar>F</Avatar>
+            </Grid>
+                    <Grid item xs zeroMinWidth>
+                        <label>First Name</label>
+                <Typography noWrap>{authState.user.first_name}</Typography>
+            </Grid>
+            </Grid>
+        </Paper>
+        <Paper className={classes.paper}>
+            <Grid container wrap="nowrap" spacing={2}>
+            <Grid item>
+                <Avatar>L</Avatar>
+            </Grid>
+                    <Grid item xs>
+                        <label>Last Name</label>
+                <Typography noWrap>{authState.user.last_name}</Typography>
+            </Grid>
+            </Grid>
+        </Paper>
+        <Paper className={classes.paper}>
+            <Grid container wrap="nowrap" spacing={2}>
+            <Grid item>
+                <Avatar>E</Avatar>
+            </Grid>
+                    <Grid item xs>
+                        <label>Email</label>
+                    <Typography>{authState.user.email}</Typography>
+                        </Grid>
+                    </Grid>
+                </Paper>
+            <Footer />
         </div>
     );
 }
-
-export default Profile;

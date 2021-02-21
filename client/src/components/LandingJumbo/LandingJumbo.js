@@ -6,7 +6,7 @@ import MyComp from '../MyComp/myComp'
 import { useAppContext } from '../../store';
 import ButtonBases from '../ButtonHome/buttonHome'
 
-import "./styles.css";
+import "./stylesHeader.css";
 import { Container } from 'react-bootstrap';
 
 const Header = () => {

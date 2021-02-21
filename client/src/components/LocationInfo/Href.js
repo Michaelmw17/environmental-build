@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./style.css";
+import "./styleLocation.css";
 
 class Href extends Component {
   static defaultProps = {

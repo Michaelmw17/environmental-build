@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         minWidth: 300,
         width: '100%',
         alignItems: 'center',
-        
+
         
     },
     image: {
@@ -49,7 +49,8 @@ const useStyles = makeStyles((theme) => ({
         height: 200,
         [theme.breakpoints.down('xs')]: {
         width: '100% !important', // Overrides inline-style
-        height: 100,
+            height: 100,
+        margin:'5px'
         },
         '&:hover, &$focusVisible': {
         zIndex: 1,

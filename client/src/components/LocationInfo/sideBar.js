@@ -5,34 +5,20 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Href from "./Href";
-import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { green } from '@material-ui/core/colors';
 
 import "./styleLocation.css";
 import styled from "styled-components";
 const StyledButton = styled(Button)`
-  background: linear-gradient(45deg, #D3959B 30%, #1D976C 90%);
+  background: linear-gradient(45deg, #005AA7 30%, #FFFDE4 90%);
   border-radius: 3px;
   border: 0;
   color: white;
-  height: 48px;
+  height: 38px;
+  width: 100%;
   padding: 0 30px;
   box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .30);
 `;
-
-const useStyles = makeStyles((theme) => ({
-  margin: {
-    margin: theme.spacing(1),
-  },
-}));
-
-const theme = createMuiTheme({
-  palette: {
-    primary: green,
-  },
-});
-
 
 const words = ['Hinterland getaways in spectacular location 495 Friday Hut Road, Possum Creek', 'Two accommodation options available', 'Main "Rosella" house 3 bedrooms', 'Flat "Bluebird" house 1 bedroom self-contained unit', 'Rustic clay tennis court', ' Set on rainforest pocket ', 'Plentiful water supply','Vegetable garden', 'Wildlife - Koalas, Platypus, Wallabies', 'Close to Bangalow and Byron Bay'];
 const items = words.map((word, e) => {
@@ -105,8 +91,8 @@ const SideDescription = () => {
                                 </li>
                                 </ul>
                                 </div>
-                        <Col md={12}>
-                          <StyledButton  href="./about" >
+                              <Col md={12}>
+                                <StyledButton   href="./about" >
                                       Photos
                                   </StyledButton>
                             </Col>

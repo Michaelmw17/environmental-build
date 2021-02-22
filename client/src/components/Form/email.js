@@ -21,19 +21,17 @@ render() {
             className="loading text-center"
             name="three-bounce"
             color="white"
-            fadeIn="none"
           />
         ) : null}
         <iframe
                             id="JotFormIFrame-210464245644857"
                             title="my Contact"
-                            onload="window.parent.scrollTo(0,0)"
                             allowtransparency="true"
-                            allowfullscreen="true"
+                            allowFullScreen={true}
                             allow="geolocation; microphone; camera"
                             src="https://form.jotform.com/210464245644857"
-                            frameborder="0"
-                            style={{paddingTop:'40px',minWidth: '100%',height:'300vh',
+                            frameBorder="0"
+                            style={{paddingTop:'40px',minWidth: '100%',height:'400vh',
                             border:'none'}}
                             scrolling="no"
                             >

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
+import ScrollToTop from './components/ScrollTop/scrollToTop'
 import Navbar from './components/Navbar/Navbar';
 import Landing from './components/pages/Landing/Landing';
 import Register from './components/Register/Register';
@@ -22,8 +22,9 @@ function App() {
         <AppContextProvider>
             <Router>
                 <div className="pl-0 pr-0 m-0 container-fluid">
+                     
                     <SideBarNav />
-                    <Navbar />
+                    <Navbar /><ScrollToTop>
                     <Route exact path="/" component={Landing} />
                     <div className="p-0 m-0 container-fluid">
                         <Route exact path="/register" component={Register} />
@@ -33,7 +34,7 @@ function App() {
                         <PrivateRoute exact path="/enquire" component={Enquire} />
                         <PrivateRoute exact path="/about" component={About} />
                         <PrivateRoute exact path="/locations" component={Locations} />
-                    </div>
+                    </div></ScrollToTop>
                 </div>
             </Router>
         </AppContextProvider>

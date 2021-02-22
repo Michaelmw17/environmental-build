@@ -11,15 +11,18 @@ import { Link } from 'react-router-dom';
 import './stylesLogin.css'
 import Button from '@material-ui/core/Button';
 import styled from "styled-components";
+import Col from 'react-bootstrap/Col'
+
 const StyledButton = styled(Button)`
-  background: linear-gradient(45deg, #D3959B 30%, #1D976C 90%);
+  background: linear-gradient(45deg, #005AA7 30%, #FFFDE4 90%);
   border-radius: 3px;
   border: 0;
   color: white;
-  height: 40px;
+  height: 38px;
+  width: 100%;
   padding: 0 30px;
-  
   box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .30);
+
 `;
 
 
@@ -102,9 +105,11 @@ function Login() {
                                 onChange={onChange}
                             />
                             </div>
+                            <Col md={12}>
                             <StyledButton type="submit"  >
-                                Submit
+                                    Submit
                             </StyledButton>
+                            </Col>
                         {/* <button type="submit" className="btn btn-lg btn-info bg-info btn-block">
                             Sign in
                         </button> */}

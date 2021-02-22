@@ -29,7 +29,7 @@ export default function Profile() {
     const [authState] = useAppContext();
 
         return (
-        
+        <div className='outerContainer'>
             <div className={classes.root}>
                         <div className="mx-auto col-12">
                             <div className="ProfileEco">
@@ -41,7 +41,6 @@ export default function Profile() {
                                         </Suspense>
                                 </Link>
                             </div>
-                        </div>
         <Paper className={classes.paper}>
             <Grid container wrap="nowrap" spacing={2}>
                         <Grid item>
@@ -76,6 +75,8 @@ export default function Profile() {
                     </Grid>
                 </Paper>
             <Footer />
-        </div>
+                </div>
+                </div>
+            </div>
     );
 }

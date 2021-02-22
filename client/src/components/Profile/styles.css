@@ -1,3 +1,6 @@
+.outerContainer {
+    height: 200vw
+}
 .profile {
     padding-left: 30px;
     color: black;
@@ -18,6 +21,7 @@
         width: 50%;
         border: 3px solid red;
         padding: 10px;
+        height: 200vw;
 
 }
 .table td{

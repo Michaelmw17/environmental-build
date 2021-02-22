@@ -1,14 +1,15 @@
 
 
-.AboutUl {
-    font-size: 1rem;
+.sectionTwo {
+  margin-top: 40px;
+    font-size: 1.3rem;
+    font-weight: 700;
     color: white;
-     height: 200vw;
 }
 .PhotoGallery {
     padding-top: 20px;
 }
-.aboutDescription p {
+.aboutDescription  {
     color:white
     
 }

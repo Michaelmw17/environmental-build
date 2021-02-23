@@ -54,11 +54,11 @@ const SideDescription = () => {
                     <Row>
                         <div className="LocationFinePrint">
                             <Col md={12}>
-                                    <ul> {items} </ul>
+                                    <ul className='list-unstyled'> {items} </ul>
                             </Col>
                             <div className="LocationList">
                             <h1 className="LocationH1">Things To Do</h1>
-                            <ul>
+                            <ul className='list-unstyled'>
                                 <li>
                                     <Href
                                     text={testData.text}

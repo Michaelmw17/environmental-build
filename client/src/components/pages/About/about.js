@@ -12,7 +12,7 @@ const AboutDescription = lazy(() => import('../../AboutContext/aboutDescription'
 })
 class About extends React.Component {
     render() {
-        return (<div>
+        return (<div className='outerContainer'>
             <div className="landing-grid-about">
                 <NavBar/>
                 <SideBarNav pageWrapId={"page-wrap"} outerContainerId={"App"} />

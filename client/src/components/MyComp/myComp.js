@@ -8,7 +8,10 @@ const  MyComp = ()  => {
         <img src={process.env.PUBLIC_URL + '/EcoGetawayLogo.jpg'}
             alt="Logo" style={{ height: '180px', width: '150px',   display: "block",
             marginLeft: "auto",
-            marginRight: "auto"}} />
+                marginRight: "auto"
+            }}
+            max-age="31536000"
+        />
     </Suspense>;
 };
 

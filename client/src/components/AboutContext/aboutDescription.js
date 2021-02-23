@@ -77,10 +77,10 @@ class AboutDescription extends Component {
                         <div className="aboutDescription">
                             <Row>
                                 <Col xs={12} sm={12} md={12} lg={4} className='ListItems'>
-                                    <ul> {items} </ul>
+                                    <ul className='list-unstyled'> {items} </ul>
                                 </Col>
                                 <Col xs={12} sm={12} md={12} lg={8}className='sectionTwo'>
-                                    <ul> {itemsTwo} </ul>
+                                    <ul className='list-unstyled'> {itemsTwo} </ul>
                                 </Col>
                                     <Col xs={12} sm={12} md={12} lg={12}>
                                         <StyledButton  href="./locations" >

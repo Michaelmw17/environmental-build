@@ -53,9 +53,9 @@ function MyComponent() {
                 styles: exampleMapStyles,
             }}
         mapContainerStyle={{
-            height: `97vh`, marginLeft: '60px',
+            height: `120vh`, marginLeft: '60px',
                   marginRight: '60px',
-                  marginTop: '60px', marginBottom: '160px'
+                  marginTop: '60px', marginBottom: '100px'
         }}
         
         zoom={11}

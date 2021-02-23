@@ -1,11 +1,12 @@
 .outerContainer {
-    height: 200vw
+    padding-bottom:    150px;
 }
 .profile {
     padding-left: 30px;
     color: black;
     padding: 100px;
     border-radius: 125px;
+   
 }
 .info {
     border-top: none;
@@ -24,12 +25,3 @@
         height: 200vw;
 
 }
-.table td{
-    border-top: none !important;
-    border-left: none !important;
-    width: 80%;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    border-radius: 20px;
-}
-

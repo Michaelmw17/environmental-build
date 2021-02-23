@@ -67,18 +67,12 @@ h5 {
     .container,
     .footer {
         width: 100%;
-    }
-    .form-group,
-    .form-control {
-        font-size: 16px;
+        padding-bottom: 80px;
     }
     p {
         font-size: 16px;
         line-height: 100%;
         text-align: justify;
-    }
-    .navLogo {
-        margin-top: 10px;
     }
     #currentTime {
         margin-top: 0;
@@ -105,14 +99,10 @@ h5 {
         text-align: left;
     }
 
-    .logoImage {
-        width: 250px;
-        height: 60px;
-    }
-
     /* The container width will be 576px */
     .container {
       width: 100%;
+      padding-bottom: 80px;
     }
     p {
         font-weight: 800;
@@ -123,9 +113,6 @@ h5 {
     .ListItems{
         font-size: 16px;
         line-height: 115%;
-    }
-    .navLogo {
-        margin-top: 10px;
     }
     #currentTime {
         margin-top: 0;
@@ -151,19 +138,6 @@ h5 {
         line-height: 115%;
         text-align: justify;
     }
-
-    .logoImage {
-        width: 300px;
-        height: 70px;
-    }
-
-    .form-group,
-    .form-control {
-        font-size: 8px;
-    }
-    .navLogo {
-        margin-top: 10px;
-    }
     #currentTime {
         margin-top: 0;
     }
@@ -183,19 +157,6 @@ h5 {
     p {
         font-size: 18px;
         text-align: justify;
-    }
-
-    .logoImage {
-        width: 350px;
-        height: 80px;
-    }
-
-    .form-group,
-    .form-control {
-        font-size: 16px;
-    }
-    .navLogo {
-        margin-top: 0;
     }
     #currentTime {
         margin-top: 30px;
@@ -218,21 +179,9 @@ h5 {
         line-height: 150%;
         text-align: justify;
     }
-
-    .logoImage {
-        width: 400px;
-        height: 90px;
-    }
    .ListItems{
         font-size: 17px;
         line-height: 115%;
-    }
-    .form-group,
-    .form-control {
-        font-size: 16px;
-    }
-    .navLogo {
-        margin-top: 0;
     }
     #currentTime {
         margin-top: 30px;

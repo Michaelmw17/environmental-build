@@ -4,7 +4,6 @@ import HeaderBrandDescription from '../../HeaderEnquire/HeaderBrand'
 import Footer from '../../Footer'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
-import './style.css';
 import NavBar from '../../Navbar/Navbar'
 
 const ContactForm = lazy(() => import('../../../components/Form/email'), {

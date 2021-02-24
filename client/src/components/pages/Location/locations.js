@@ -31,23 +31,27 @@ function Locations() {
         <NavBar />
         <SideBarNav pageWrapId={"page-wrap"} outerContainerId={"App"} />
             <LocationDescription />
-                      <div className='topContainer'>    <div className="google-apps">
+                <div className='topContainer'>
+                  <div className="google-apps">
                             <Row>
-                            <Suspense fallback={
-                              <div>
-                                <Loader type="Rings" color="#00BFFF" height={80} width={80} />
-                              </div>}>
-                              <Col xs={12} md={12} lg={6}>
-                                  <SideDescription/>
-                                </Col>
-                            </Suspense>
                         <Col xs={12} md={12} lg={6}>
                   <div className="google-plus">
                     <Suspense fallback={<div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>}>
                   <MyComponent/>
                             </Suspense>
                             </div>
-                        </Col>
+                          </Col>
+                        <Col xs={12} md={12} lg={6}>
+                          <div className="LocationThingToDo">
+                              <Suspense fallback={
+                              <div>
+                                <Loader type="Rings" color="#00BFFF" height={80} width={80} />
+                              </div>}>
+                                  <SideDescription/>
+                                
+                            </Suspense>
+                          </div>
+                          </Col>
                       </Row>
                 </div>
             </div>

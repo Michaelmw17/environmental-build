@@ -6,7 +6,7 @@ function ScrollToTop({ history, children }) {
     const unlisten = history.listen(() => {
       window.scrollTo(0, 0);
     });
-    return () => {
+    return () => {// eslint-disable-next-line
       unlisten();
     }// eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

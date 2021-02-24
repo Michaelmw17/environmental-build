@@ -13,7 +13,6 @@ import MenuBar from './components/AppNav/hamburgerNav';
 import SideBarNav from './components/AppNav/hamburgerNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AppContextProvider } from './store';
-
 import './App.css';
 import PrivateRoute from './PrivateRoute';
 

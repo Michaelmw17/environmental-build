@@ -10,20 +10,55 @@ import Button from '@material-ui/core/Button';
 import "./styleLocation.css";
 import styled from "styled-components";
 const StyledButton = styled(Button)`
-  background: linear-gradient(45deg, #005AA7 30%, #FFFDE4 90%);
-  border-radius: 3px;
-  border: 0;
-  color: white;
-  height: 38px;
-  width: 100%;
-  padding: 0 30px;
-  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .30);
+	 width: 300px;
+	 height: 50px;
+	 background: #f3f0f1;
+	 position: relative;
+	 background: #f3f0f1;
+	 margin-bottom: 25px;
+	 border-radius: 32px;
+	 text-align: center;
+	 cursor: pointer;
+	 transition: all 0.1s ease-in-out;
+ .Button span {
+	 line-height: 100px;
+	 font-family: "Montserrat", sans-serif;
+	 font-size: 32px;
+	 font-weight: semibold;
+}
+ .Button:nth-child(1) {
+	 box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+	 color: #6f6cde;
+}
+ .Button:nth-child(1):hover {
+	 opacity: 0.3;
+	 box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+ .Button:nth-child(1):active {
+	 opacity: 1;
+	 box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+	 color: #79e3b6;
+}
+ .Button:nth-child(2) {
+	 opacity: 0.3;
+	 box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+	 color: #6f6cde;
+}
+ .Button:nth-child(3) {
+	 box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+	 color: #79e3b6;
+}
+ .Button:nth-child(3):hover {
+	 opacity: 1;
+	 box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+ 
 `;
 
-const words = ['Hinterland getaways in spectacular location 495 Friday Hut Road, Possum Creek', 'Two accommodation options available', 'Main "Rosella" house 3 bedrooms', 'Flat "Bluebird" house 1 bedroom self-contained unit', 'Rustic clay tennis court', ' Set on rainforest pocket ', 'Plentiful water supply','Vegetable garden', 'Wildlife - Koalas, Platypus, Wallabies', 'Close to Bangalow and Byron Bay'];
-const items = words.map((word, e) => {
-    return <li key={e}>{word}</li>;
-});
+// const words = ['Hinterland getaways in spectacular location 495 Friday Hut Road, Possum Creek', 'Two accommodation options available', 'Main "Rosella" house 3 bedrooms', 'Flat "Bluebird" house 1 bedroom self-contained unit', 'Rustic clay tennis court', ' Set on rainforest pocket ', 'Plentiful water supply','Vegetable garden', 'Wildlife - Koalas, Platypus, Wallabies', 'Close to Bangalow and Byron Bay'];
+// const items = words.map((word, e) => {
+//     return <li key={e}>{word}</li>;
+// });
 
 const testData = {
   text: "Town Bangalow | Make the move to Bangalow",
@@ -54,42 +89,42 @@ const SideDescription = () => {
                     <Row>
                         <div className="LocationFinePrint">
                             <Col md={12}>
-                                    <ul className='list-unstyled'> {items} </ul>
+                                    {/* <ul className='list-unstyled'> {items} </ul> */}
                             </Col>
                             <div className="LocationList">
                             <h1 className="LocationH1">Things To Do</h1>
                             <ul className='list-unstyled'>
-                                <li>
-                                    <Href
-                                    text={testData.text}
-                                    url={testData.link}
-                                    />
-                                </li>
-                                <li>
-                                    <Href
-                                    text={testData1.text}
-                                    url={testData1.link}
-                                    />
-                                </li>
-                                <li>
-                                    <Href
-                                    text={testData2.text}
-                                    url={testData2.link}
-                                    />
-                                </li>
-                                <li>
-                                    <Href
-                                    text={testData3.text}
-                                    url={testData3.link}
-                                    />
-                                </li>
                                     <li>
-                                    <Href
-                                    text={testData4.text}
-                                    url={testData4.link}
-                                    />
-                                </li>
-                                </ul>
+                                        <Href
+                                        text={testData.text}
+                                        url={testData.link}
+                                        />
+                                    </li>
+                                    <li>
+                                        <Href
+                                        text={testData1.text}
+                                        url={testData1.link}
+                                        />
+                                    </li>
+                                    <li>
+                                        <Href
+                                        text={testData2.text}
+                                        url={testData2.link}
+                                        />
+                                    </li>
+                                    <li>
+                                        <Href
+                                        text={testData3.text}
+                                        url={testData3.link}
+                                        />
+                                    </li>
+                                        <li>
+                                        <Href
+                                        text={testData4.text}
+                                        url={testData4.link}
+                                        />
+                                    </li>
+                                  </ul>
                                 </div>
                               <Col md={12}>
                                 <StyledButton   href="./about" >

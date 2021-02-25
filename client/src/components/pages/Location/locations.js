@@ -34,14 +34,14 @@ function Locations() {
                 <div className='topContainer'>
                   <div className="google-apps">
                             <Row>
-                        <Col xs={12} md={12} lg={6}>
+                        <Col xs={12} md={12} lg={6} >
                   <div className="google-plus">
                     <Suspense fallback={<div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>}>
                   <MyComponent/>
                             </Suspense>
                             </div>
                           </Col>
-                        <Col xs={12} md={12} lg={6}>
+                        <Col  xs={12} md={12} lg={6}>
                           <div className="LocationThingToDo">
                               <Suspense fallback={
                               <div>

@@ -7,6 +7,7 @@ import "./style.css"
 const SideBarNav = ()  => {
     return (
         <Menu>
+            
                     <Link className="menu-item" to="/">
                         Home
                     </Link>
@@ -30,7 +31,7 @@ const SideBarNav = ()  => {
                     <Link  className="menu-item" to="/login">
                     Login
                     </Link>
-            
+            <p>Please sing in <br></br>to enquire your stay</p>
         </Menu>
         );
     };

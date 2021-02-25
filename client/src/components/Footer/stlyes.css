@@ -20,8 +20,14 @@ h2 {
 	font:1.25em georgia,serif; 
 	margin:0 0 0.5em;
 }
-	h1, h2, a {
+	h1, h2{
 		color:orange;
+	}
+	a {
+		color: blue;
+	}
+	a:hover {
+		color: white;
 	}
 
 p { 

@@ -85,10 +85,10 @@ const testData4 = {
 const SideDescription = () => {
         return (
             <div className="LocationHeader">
-                <Container>
+                <Container  fluid >
                     <Row>
                         <div className="LocationFinePrint">
-                            <Col md={12}>
+                            <Col >
                                     {/* <ul className='list-unstyled'> {items} </ul> */}
                             </Col>
                             <div className="LocationList">

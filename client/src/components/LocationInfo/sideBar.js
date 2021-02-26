@@ -10,7 +10,7 @@ import Button from '@material-ui/core/Button';
 import "./styleLocation.css";
 import styled from "styled-components";
 const StyledButton = styled(Button)`
-	 width: 300px;
+	 width: 50%;
 	 height: 50px;
 	 background: #f3f0f1;
 	 position: relative;
@@ -93,7 +93,8 @@ const SideDescription = () => {
                             </Col>
                             <div className="LocationList">
                             <h1 className="LocationH1">Things To Do</h1>
-                            <ul className='list-unstyled'>
+                            
+                    <ul className='list-unstyled'>
                                     <li>
                                         <Href
                                         text={testData.text}

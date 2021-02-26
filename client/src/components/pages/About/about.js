@@ -6,7 +6,7 @@ import { lazy } from '@loadable/component'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import NavBar from '../../Navbar/Navbar'
-import Roll from 'react-reveal/Roll';
+// import Roll from 'react-reveal/Roll';
 
 
 const AboutDescription = lazy(() => import('../../AboutContext/aboutDescription'), {

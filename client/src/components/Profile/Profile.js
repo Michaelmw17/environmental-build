@@ -28,7 +28,8 @@ export default function Profile() {
     const classes = useStyles();
     const [authState] = useAppContext();
 
-        return (
+    return (
+            <div>
         <div className='outerContainer'>
             <div className={classes.root}>
                         <div className="mx-auto col-12">
@@ -74,9 +75,11 @@ export default function Profile() {
                         </Grid>
                     </Grid>
                 </Paper>
-            <Footer />
+            
                 </div>
                 </div>
             </div>
+                    <Footer />
+                </div>
     );
 }

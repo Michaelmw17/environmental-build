@@ -100,6 +100,7 @@ function Login() {
     };
 
     return (
+        <div>
         <div className='outerContainer'>
         <div className="container">
             <div className="row">
@@ -150,9 +151,10 @@ function Login() {
                     </form>
                 </div>
             </div>
+            </div>
+            </div>
             <Footer />
             </div>
-        </div>
     );
 }
 

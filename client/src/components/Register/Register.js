@@ -100,6 +100,7 @@ function Register(props) {
     };
 
     return (
+        <div>
         <div className='outerContainer'>
         <div className="container ">
             <div className="row">
@@ -173,9 +174,10 @@ function Register(props) {
                     </form>
                 </div>
             </div>
+            </div>
+            </div>
             <Footer />
             </div>
-        </div>
     );
 }
 

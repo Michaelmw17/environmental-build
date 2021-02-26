@@ -1,13 +1,12 @@
-import React, { Component, Suspense } from "react";
-// import { Container, Row, Col, Button } from "react-bootstrap";
+import React, {  Suspense } from "react";
 import Href from "../LocationInfo/Href";
 import './stlyes.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faYoutube,
-  faFacebook,
+  faLinkedin,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
@@ -194,31 +193,12 @@ const Footer = () => {
               <div className="footer-menu">
                 <h2 className="footer-menu-name"> Quick Links</h2>
                 <ul id="menu-quick-links" className="footer-menu-list">
-                  
                   <li>
                           <Href
                           text={testDataGet.text}
                           url={testDataGet.link}
                           />
                         </li>
-                  {/* <li className="menu-item menu-item-type-custom menu-item-object-custom">
-                    <a target="_blank" rel="noopener noreferrer" href="#">Support Center</a>
-                  </li> */}
-                  
-                  {/* <li className="menu-item menu-item-type-custom menu-item-object-custom">
-                    <a target="_blank" rel="noopener noreferrer" href="#">Service Status</a>
-                  </li>
-                  <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="#">Security</a>
-                  </li>
-                  <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="#">Blog</a>
-                  </li>
-                  <li className="menu-item menu-item-type-post_type_archive menu-item-object-customer">
-                    <a href="#">Customers</a></li>
-                  <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="#">Reviews</a>
-                  </li> */}
                 </ul>
               </div>
             </div>
@@ -242,33 +222,35 @@ const Footer = () => {
               </svg>
               <div className="footer-social-link linkedin" href="#" target="_blank">
                 <span className="hidden-link-text">Linkedin</span>
-                <a href="https://wwww.twitter.com" className="twitter social">
+                <a href="https://twitter.com/Michael51620516" className="twitter social">
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
               </div>
               <div className="footer-social-link twitter" target="_blank">
                 <span className="hidden-link-text">Twitter</span>
                 <a
-                    href="http://www.instagram.com/larnbuildteach"
-                    className="instagram social"
+                    href="https://github.com/Michaelmw17"
+                  className="Github social"
                   >
-                    <FontAwesomeIcon icon={faInstagram} size="2x" />
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
                   </a>
               </div>
               <div className="footer-social-link youtube" href="https://www.linkedin.com/in/pooja-nahelia-340040bb/" target="_blank">
-                <span className="hidden-link-text">Youtube</span>
-                  <a href="https://www.facebook.com/learnbuildteach/"
-                      className="facebook social">
-                    <FontAwesomeIcon icon={faFacebook} size="2x" />
-                  </a>
+                <span className="hidden-link-text">Linkedin</span>
+                  <a
+                  href="https://www.linkedin.com/in/michael-watt-6a76961b3/"
+                  className="Linkedin social"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                </a>
               </div>
               <div className="footer-social-link github" href="#" target="_blank">
-                <span className="hidden-link-text">Github</span>
+                <span className="hidden-link-text">Linkedin</span>
                 <a
-                  href="https://www.youtube.com/c/jamesqquick"
-                  className="youtube social"
+                  href="https://www.linkedin.com/in/michael-watt-6a76961b3/"
+                  className="Linkedin social"
                 >
-                  <FontAwesomeIcon icon={faYoutube} size="2x" />
+                  <FontAwesomeIcon icon={faInstagram}  size="2x" />
                 </a>
               </div>
             </div>
@@ -276,7 +258,7 @@ const Footer = () => {
           <div className="footer-copyright">
             <div className="footer-copyright-wrapper">
               <p className="footer-copyright-text">
-                <a className="footer-copyright-link" href="https://npooja.now.sh/" target="_self"> ©2020. | Designed By: Michael Watt. | All rights reserved. </a>
+                <a className="footer-copyright-link" href="https://michaelmw17.github.io/mw/" target="_self"> ©2020. | Designed By: Michael Watt. | All rights reserved. </a>
               </p>
             </div>
           </div>

@@ -14,6 +14,7 @@
   word-wrap: break-word;
   padding-bottom: 100px;
   color: white;
+  position: relative;
 }
 .LocationH1 {
   color: white

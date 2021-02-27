@@ -54,7 +54,7 @@ function MyComponent() {
             }}
         mapContainerStyle={{
             height: `120vh`, marginLeft: '30px',
-                  marginRight: '20px',
+                  marginRight: '30px',
                   marginTop: '40px'
         }}
         

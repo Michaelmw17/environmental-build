@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Footer from '../Footer'
 import Spinner from 'react-bootstrap/Spinner';
 class ContactForm extends React.Component {
   constructor(props) {
@@ -14,7 +14,8 @@ hideSpinner = () => {
     });
   };
 render() {
-    return (
+  return (
+      <div>
       <div className="container rsvp-wrapper">
         {this.state.loading ? (
           <Spinner
@@ -38,7 +39,10 @@ render() {
                               border:'none'}}
                             scrolling="no"
                             >
-                    </iframe>
+        </iframe>
+        
+      </div>
+      {/* <Footer /> */}
       </div>
     );
   }

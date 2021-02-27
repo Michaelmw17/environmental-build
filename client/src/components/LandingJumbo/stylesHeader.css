@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0px;
+  position: relative;
   font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 

@@ -33,14 +33,15 @@
   background-color: rgb(58,181,74);
   border-radius: 25px;
   border: 1px solid rgb(0, 0, 0);
-  padding:30px;
-  margin:30px;
+  padding:10px;
+  margin:60px;
   margin-bottom:50px;
   flex-flow: column;
   word-wrap: break-word;
   display: flex;
   justify-content: space-between;
-  width:90%;
+  width:100%;
+  margin-left: 1px;
 }
 
 .bg-near-white {

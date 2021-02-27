@@ -16,7 +16,8 @@ const ContactForm = lazy(() => import('../../../components/Form/email'), {
 
 class enquire extends React.Component {
 render() {  
-    return (
+  return (
+      <div>
       <div className="landing-grid-about">
         <NavBar/>
         <SideBarNav pageWrapId={"page-wrap"} outerContainerId={"App"} />
@@ -34,6 +35,7 @@ render() {
                 <Footer/>
                 </div>
             </div>
+      </div>
     );
     }
 }

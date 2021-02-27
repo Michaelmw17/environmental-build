@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Href from "./Href";
+
 import Button from '@material-ui/core/Button';
 
 import "./styleLocation.css";
@@ -112,7 +113,8 @@ const SideDescription = () => {
                                         text={testData2.text}
                                         url={testData2.link}
                                         />
-                                    </li>
+                      </li>
+                      
                                     <li>
                                         <Href
                                         text={testData3.text}

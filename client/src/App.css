@@ -36,7 +36,7 @@ h3 {
     font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     color: #333333;
     margin-left: 10px;
-    text-align: left;
+    text-align: center;
     padding-top: 20px;
     font-size: 28px;
 }
@@ -93,11 +93,14 @@ h5 {
     /* The body's bg color will be #4caf50 */
     body {
       background-color: #4caf50;
-    } */
+
+        width: 100%;
+    } 
 
     h1 {
-        text-align: left;
+        text-align: center;
     }
+    
 
     /* The container width will be 576px */
     .container {
@@ -127,6 +130,8 @@ h5 {
     /* The body's bg color will be #fca203 */
     body {
       background-color: #fca203;
+
+        width: 100%;
     }
 
     h1 {

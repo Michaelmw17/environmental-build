@@ -11,11 +11,11 @@ import { lazy } from '@loadable/component'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import Button from '@material-ui/core/Button';
-
+// import Footer from '../Footer'
 import styled from "styled-components";
 const StyledButton = styled(Button)`
   
-	 width: 300px;
+	 width: 100%;
 	 height: 50px;
 	 background: #f3f0f1;
 	 position: relative;
@@ -77,7 +77,7 @@ const itemsTwo = sectionTwo.map((word, e) => {
 });
 class AboutDescription extends Component {
     render() {
-        return (
+        return (<div>
             <div className="FormHeader">
                 <Container>
                     <HeaderAbout/>
@@ -127,6 +127,7 @@ class AboutDescription extends Component {
                         </div>
                     </Container>
                 </Container>
+            </div>
             </div>
         );
     }

@@ -31,7 +31,7 @@ const SideBarNav = ()  => {
                     <Link  className="menu-item" to="/login">
                     Login
                     </Link>
-            <p>Please sing in <br></br>to enquire your stay</p>
+            <p className="signIn">Please Login in <br></br>to enquire your stay</p>
         </Menu>
         );
     };

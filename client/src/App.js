@@ -6,7 +6,6 @@ import Landing from './components/pages/Landing/Landing';
 import Register from './components/Register/Register';
 import Login from './components/Login/Login';
 import Profile from './components/Profile/Profile';
-import GridLanding from './components/pages/LandingGrid/GridLanding';
 import Enquire from './components/pages/Enquire/enquire';
 import About from './components/pages/About/about';
 import Locations from './components/pages/Location/locations';
@@ -34,7 +33,6 @@ function App() {
                                 <PrivateRoute async exact path="/enquire" component={Enquire} />
                                 <PrivateRoute async exact path="/about" component={About} />
                                 <PrivateRoute async exact path="/locations" component={Locations} />
-                                <PrivateRoute async exact path="/GridLanding" component={GridLanding} />
                             </div>
                         </ScrollToTop>
                     </div>

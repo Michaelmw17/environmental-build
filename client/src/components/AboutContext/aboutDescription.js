@@ -12,6 +12,7 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import Button from '@material-ui/core/Button';
 // import Footer from '../Footer'
+
 import styled from "styled-components";
 const StyledButton = styled(Button)`
   
@@ -80,6 +81,7 @@ class AboutDescription extends Component {
         return (<div>
             <div className="FormHeader">
                 <Container>
+                    
                     <HeaderAbout/>
                     <hr className="hrAbout" style={{
                         borderTop: '1px solid rgba(63, 81, 181, 0.5)'

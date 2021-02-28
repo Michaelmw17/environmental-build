@@ -3,7 +3,7 @@
 .sectionTwo {
   margin-top: 40px;
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
 }
 .PhotoGallery {
@@ -135,6 +135,6 @@ img{
   
 }
 .ListItems {
-  font-weight: 900;
+  font-weight: 700;
   margin-top: 50px;
 }

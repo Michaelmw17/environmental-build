@@ -1,13 +1,12 @@
 import React, {  Suspense } from "react";
 import Href from "../LocationInfo/Href";
 import './styles.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faTwitter,
-  faInstagram,
-  faGithub
-} from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faLinkedin,
+//   faTwitter,
+//   faGithub
+// } from "@fortawesome/free-brands-svg-icons";
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import Spinner from 'react-bootstrap/Spinner'
@@ -59,30 +58,12 @@ const StyledButton = styled(Button)`
 	 box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 `;
-const testData = {
-  text: "About",
-  link: "./about"
-};
-const testDataOne = {
-  text: "Enquire",
-  link: "./enquire"
-};
-const testDataTwo = {
-  text: "Location",
-  link: "./locations"
-};
+
 const testDataThree = {
   text: "Profile",
   link: "./profile"
 };
-const testDataFour = {
-  text: "Login",
-  link: "./Login"
-};
-const testDataFive = {
-  text: "Register",
-  link: "./register"
-};
+
 const testDataSix = {
   text: "Privacy Notice",
   link: "https://opensource.org/licenses/MIT"
@@ -91,10 +72,7 @@ const testDataSeven = {
   text: "Terms of Use",
   link: "https://github.com/Michaelmw17/environmental-build"
 };
-const testDataGet = {
-  text: "Support",
-  link: "./enquire"
-};
+
 
 const Footer = () => {
     return (
@@ -120,22 +98,24 @@ const Footer = () => {
                 <ul id="menu-get-started" className="footer-menu-list">
                   <ul className='list-unstyled'>
                         <li>
-                            <Href
-                            text={testData.text}
-                            url={testData.link}
-                            />
+                            <Link className="menu-item" to="/about">
+                        About
+                    </Link>
+                        </li>
+                    <li>
+                      <Link className="menu-item" to="/">
+                        Home
+                    </Link>
                         </li>
                               <li>
-                                  <Href
-                                  text={testDataOne.text}
-                                  url={testDataOne.link}
-                                  />
+                        <Link className="menu-item" to="/enquire">
+                        Enquire
+                    </Link>
                         </li>
                               <li>
-                                  <Href
-                                  text={testDataTwo.text}
-                                  url={testDataTwo.link}
-                                  />
+                    <Link className="menu-item" to="/locations">
+                    Location
+                    </Link>
                         </li>
                   </ul>
                 </ul>
@@ -146,16 +126,14 @@ const Footer = () => {
                 <h2 className="footer-menu-name"> Get Started</h2>
                 <ul id="menu-company" className="footer-menu-list">
                       <li>
-                          <Href
-                          text={testDataFour.text}
-                          url={testDataFour.link}
-                          />
+                          <Link  className="menu-item" to="/login">
+                    Login
+                    </Link>
                         </li>
                       <li>
-                          <Href
-                          text={testDataFive.text}
-                          url={testDataFive.link}
-                          />
+                          <Link  className="menu-item" to="/register">
+                            Register
+                            </Link>
                         </li>
                       <li>
                           <Href
@@ -188,28 +166,34 @@ const Footer = () => {
                 <h2 className="footer-menu-name"> Quick Links</h2>
                 <ul id="menu-quick-links" className="footer-menu-list">
                   <li>
-                            <Href
-                            text={testData.text}
-                            url={testData.link}
-                            />
+                            <Link className="menu-item" to="/about">
+                        About
+                    </Link>
+                        </li>
+                    <li>
+                      <Link className="menu-item" to="/">
+                        Home
+                    </Link>
                         </li>
                               <li>
-                                  <Href
-                                  text={testDataOne.text}
-                                  url={testDataOne.link}
-                                  />
+                        <Link className="menu-item" to="/enquire">
+                        Enquire
+                    </Link>
                         </li>
                               <li>
-                                  <Href
-                                  text={testDataTwo.text}
-                                  url={testDataTwo.link}
-                                  />
+                          <Link className="menu-item" to="/locations">
+                          Location
+                          </Link>
                         </li>
-                              <li>
-                                  <Href
-                                  text={testDataThree.text}
-                                  url={testDataThree.link}
-                                  />
+                        <li>
+                            <Link className="menu-item" to="/profile"  >
+                            Profile
+                            </Link>
+                        </li>
+                        <li>
+                            <Link  className="menu-item" to="/login">
+                            Login
+                            </Link>
                         </li>
                 </ul>
               </div>
@@ -229,7 +213,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="footer-social-links">
+            {/* <div className="footer-social-links">
               <div className="footer-social-link linkedin" href="#" target="_blank">
                 <span className="hidden-link-text">Linkedin</span>
                 <a href="https://twitter.com/Michael51620516" className="twitter social">
@@ -251,24 +235,15 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/michael-watt-6a76961b3/"
                   className="Linkedin social"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                  <FontAwesomeIcon  icon={faLinkedin} size="2x" />
                 </a>
               </div>
-              {/* <div className="footer-social-link github" href="#" target="_blank">
-                <span className="hidden-link-text">Linkedin</span>
-                <a
-                  href="https://www.linkedin.com/in/michael-watt-6a76961b3/"
-                  className="Linkedin social"
-                >
-                  <FontAwesomeIcon icon={faInstagram}  size="2x" />
-                </a>
-              </div> */}
-            </div>
+            </div> */}
           </div>
           <div className="footer-copyright">
             <div className="footer-copyright-wrapper">
               <p className="footer-copyright-text">
-                <a className="footer-copyright-link" href="https://michaelmw17.github.io/mw/" target="_self"> ©2020. | Designed By: Michael Watt. | All rights reserved. </a>
+                <a className="footer-copyright-link" href="https://michaelmw17.github.io/mw/" target="_self"> ©2021. | Designed By: Michael Watt. | All rights reserved. |</a><a href="https://www.vecteezy.com/free-vector/nature">Nature Vectors by Vecteezy</a>
               </p>
             </div>
           </div>

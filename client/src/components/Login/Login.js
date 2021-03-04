@@ -106,7 +106,6 @@ function Login() {
             <div className="row">
                 <div className="mx-auto mt-5 col-md-6">
                     <form noValidate onSubmit={handleSubmit}>
-                     
                         <div className="EcoPhoto">
                         <Link to="/" >
                             <Suspense fallback={
@@ -116,7 +115,6 @@ function Login() {
                                 </Suspense>
                             </Link>
                             </div>
-                            
                             <div className="form-group">
                                 <h1 className="mb-3 h3 font-weight normal">Please Sign in</h1>
                             <label htmlFor="email">Email Address</label>
@@ -145,16 +143,13 @@ function Login() {
                                     Submit
                             </StyledButton>
                             </Col>
-                        {/* <button type="submit" className="btn btn-lg btn-info bg-info btn-block">
-                            Sign in
-                        </button> */}
-                    </form>
+                        </form>
+                    </div>
+                </div>
                 </div>
             </div>
-            </div>
-            </div>
-            <Footer />
-            </div>
+        <Footer />
+    </div>
     );
 }
 

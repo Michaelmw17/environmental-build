@@ -204,7 +204,8 @@ const Footer = () => {
                       <StyledButton  href="./enquire" >
                           Enquire Now
                         </StyledButton>
-                    </div>
+              </div>
+              
               <div className="footer-call-to-action">
                 <h2 className="footer-call-to-action-title"> You Call Us</h2>
                 <div className="footer-call-to-action-link-wrapper">
@@ -243,7 +244,7 @@ const Footer = () => {
           <div className="footer-copyright">
             <div className="footer-copyright-wrapper">
               <p className="footer-copyright-text">
-                <a className="footer-copyright-link" href="https://michaelmw17.github.io/mw/" target="_self"> ©2021. | Designed By: Michael Watt. | All rights reserved. |</a><a href="https://www.vecteezy.com/free-vector/nature">Nature Vectors by Vecteezy</a>
+                <a className="footer-copyright-link" href="https://michaelmw17.github.io/mw/" target="_self"> ©2021. | Designed By: Michael Watt. | All rights reserved. | </a><a href="https://www.vecteezy.com/free-vector/nature">Nature Vectors by Vecteezy</a>
               </p>
             </div>
           </div>

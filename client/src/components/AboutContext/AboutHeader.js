@@ -1,8 +1,10 @@
 import React from 'react';
 import "./styles.css";
 
+import { Zoom } from "react-awesome-reveal";
 const  HeaderAbout = ()  => {
     return (
+        <Zoom left>
          <div className="centerHeader" style={{
             display: "flex",
             justifyContent: "center",
@@ -15,7 +17,8 @@ const  HeaderAbout = ()  => {
                 </div>
                         <div className='title'>About</div>
                         </div>
-                    </div>
+            </div>
+        </Zoom>
     )
 }
 export default HeaderAbout;

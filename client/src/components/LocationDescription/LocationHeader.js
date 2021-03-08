@@ -1,7 +1,8 @@
 import React from 'react';
+import { Zoom } from "react-awesome-reveal";
 
 const  HeaderLocation = ()  => {
-    return (
+    return (<Zoom left>
          <div className="centerHeader" style={{
                         display: "flex",
                         justifyContent: "center",
@@ -21,7 +22,8 @@ const  HeaderLocation = ()  => {
                         </div>
                         <div className='title'>Location</div>
                         </div>
-                    </div>
+        </div>
+    </Zoom>
     )
 }
 export default HeaderLocation;

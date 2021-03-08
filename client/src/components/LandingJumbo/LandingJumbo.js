@@ -5,14 +5,14 @@ import Spinner from 'react-bootstrap/Spinner'
 import MyComp from '../MyComp/myComp'
 import { useAppContext } from '../../store';
 import ButtonBases from '../ButtonHome/buttonHome'
-
+import { Zoom } from "react-awesome-reveal";
 
 import "./stylesHeader.css";
 import { Container } from 'react-bootstrap';
 
 const Header = () => {
     const [state] = useAppContext();
-    return(
+    return(       <Zoom left>
          <Container  fluid>
         <div className='header'>
             <span className='header-title'>
@@ -26,13 +26,14 @@ const Header = () => {
             </span>
             <br/>
             <span className="header-text">
-                <h1>
-                Welcome {state.user.first_name} {state.user.last_name}
-                </h1>
-                Please Sign in/Register  to enquire your next stay!
+                        <h1>
+                        Welcome {state.user.first_name} {state.user.last_name}
+                        </h1>
+                        Please Sign in/Register  to enquire about your next stay!
                     </span>
             </div>
         </Container>
+        </Zoom>
     );
 }
 
@@ -95,7 +96,8 @@ function LandingJumbo() {
     const [state] = useAppContext();
 
     console.log({state});
-        return (
+    return (
+            <Zoom left>
             <div style={{width: '100%', margin: 'auto'}}>
                 <div id='body'>
                     <Header />
@@ -118,7 +120,8 @@ function LandingJumbo() {
                                 description='Self contained has 1 bedrooms with access to sparkling swimming hole. NBN, drinking water filtered from tank. Maximum 2 people with minimum 2 night stay.
                                 '/>
                     </div>
-            </div>
+        </div>
+        </Zoom>
         );
     
 }

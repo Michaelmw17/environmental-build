@@ -1,12 +1,10 @@
 import React from 'react';
-
-// import Spinner from 'react-bootstrap/Spinner', { lazy, Suspense }
+import { Zoom } from "react-awesome-reveal";
 import "./style.css";
-
-// const MyComp = lazy(() => import('../MyComp/myComp'));
 
 const  HeaderBrandDescription = ()  => {
     return (
+        <Zoom left>
          <div className="centerHeader" style={{
                         display: "flex",
                         justifyContent: "center",
@@ -25,6 +23,7 @@ const  HeaderBrandDescription = ()  => {
                         <div className='title'> Enquire</div>
                         </div>
                     </div>
+                </Zoom>
     )
 }
 export default HeaderBrandDescription;

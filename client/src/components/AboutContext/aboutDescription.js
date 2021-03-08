@@ -4,14 +4,11 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import HeaderAbout from './AboutHeader'
-// import SecondCarousel from './secondPhotos';
-// import Carousel from './photos'
 import "./styles.css";
 import { lazy } from '@loadable/component'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import Button from '@material-ui/core/Button';
-// import Footer from '../Footer'
 
 import styled from "styled-components";
 const StyledButton = styled(Button)`

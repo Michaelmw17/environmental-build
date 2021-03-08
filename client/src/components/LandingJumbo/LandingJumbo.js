@@ -12,8 +12,8 @@ import { Container } from 'react-bootstrap';
 
 const Header = () => {
     const [state] = useAppContext();
-    return(       <Zoom left>
-         <Container  fluid>
+    return(
+         <Container className="container-main">
         <div className='header'>
             <span className='header-title'>
                 <Link to="/" >
@@ -26,14 +26,13 @@ const Header = () => {
             </span>
             <br/>
             <span className="header-text">
-                        <h1>
+                        <h1 className="Welcome">
                         Welcome {state.user.first_name} {state.user.last_name}
                         </h1>
                         Please Sign in/Register  to enquire about your next stay!
                     </span>
             </div>
         </Container>
-        </Zoom>
     );
 }
 
@@ -97,13 +96,14 @@ function LandingJumbo() {
 
     console.log({state});
     return (
-            <Zoom left>
+            
             <div style={{width: '100%', margin: 'auto'}}>
                 <div id='body'>
                     <Header />
                     <div className='ButtonBases'>
                         <ButtonBases />
-                        </div>
+                </div>
+                <Zoom left>
                             <HeaderCard 
                                 className='section bg-green'
                                 title='Introduction' 
@@ -119,9 +119,9 @@ function LandingJumbo() {
                                 title='Bluebird - 1 Bed'
                                 description='Self contained has 1 bedrooms with access to sparkling swimming hole. NBN, drinking water filtered from tank. Maximum 2 people with minimum 2 night stay.
                                 '/>
+                        </Zoom>
                     </div>
-        </div>
-        </Zoom>
+                </div>
         );
     
 }

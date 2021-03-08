@@ -56,11 +56,6 @@ const StyledButton = styled(Button)`
  
 `;
 
-// const words = ['Hinterland getaways in spectacular location 495 Friday Hut Road, Possum Creek', 'Two accommodation options available', 'Main "Rosella" house 3 bedrooms', 'Flat "Bluebird" house 1 bedroom self-contained unit', 'Rustic clay tennis court', ' Set on rainforest pocket ', 'Plentiful water supply','Vegetable garden', 'Wildlife - Koalas, Platypus, Wallabies', 'Close to Bangalow and Byron Bay'];
-// const items = words.map((word, e) => {
-//     return <li key={e}>{word}</li>;
-// });
-
 const testData = {
   text: "Town Bangalow | Make the move to Bangalow",
   link: "http://www.townbangalow.com.au"

@@ -13,7 +13,7 @@ import Button from '@material-ui/core/Button';
 import styled from "styled-components";
 const StyledButton = styled(Button)`
   
-	 width: 100%;
+	 width: 80%;
 	 height: 50px;
 	 background: #f3f0f1;
 	 position: relative;
@@ -116,11 +116,13 @@ class AboutDescription extends Component {
                                 <Col xs={12} sm={12} md={12} lg={8}className='sectionTwo'>
                                     <ul className='list-unstyled'> {itemsTwo} </ul>
                                 </Col>
-                                    <Col xs={12} sm={12} md={12} lg={12}>
+                                    <Container>
+                                        <Col>
                                         <StyledButton  href="./locations" >
-                                            Location
+                                                Location
                                         </StyledButton>
-                                    </Col>
+                                            </Col>
+                                        </Container>
                                 </Row>
                             </div>
                         </div>

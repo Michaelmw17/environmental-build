@@ -14,6 +14,7 @@ class Href extends Component {
 
     return (
       <a
+        rel="noopener"
         target={target}
         href={url}
       >

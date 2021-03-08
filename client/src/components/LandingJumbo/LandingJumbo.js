@@ -10,32 +10,32 @@ import { Zoom } from "react-awesome-reveal";
 import "./stylesHeader.css";
 import { Container } from 'react-bootstrap';
 
-const Header = () => {
-    const [state] = useAppContext();
-    return(
-         <Container className="container-main">
-        <div className='header'>
-            <span className='header-title'>
-                <Link to="/" >
-                <Suspense fallback={
-                            <Spinner animation="border" />
-                            }>
-                                <MyComp /> 
-                    </Suspense>
-                </Link>
-            </span>
-            <br/>
-            <span className="header-text">
-                        <h1 className="Welcome">
-                        Welcome {state.user.first_name} {state.user.last_name}
-                        </h1>
-                        Please Sign in/Register  to enquire about your next stay!
-                    </span>
-            </div>
-        </Container>
-    );
-}
+const CardHeader = (props) => {
 
+    const [state] = useAppContext();
+    return (
+
+            <Container fluid>
+                <Link to="/" >
+                    <Suspense fallback={
+                                <Spinner animation="border" />
+                                }>
+                                    <MyComp /> 
+                        </Suspense>
+                    </Link>
+                <div className={props.className} >
+                    <div className="big-div">
+                                <h1 className="Welcome">
+                                Welcome {state.user.first_name} {state.user.last_name}
+                                </h1>
+                                <p>
+                                Please Sign in / Register  to enquire about your next stay!
+                                </p>
+                            </div>
+                        </div>
+            </Container>
+    )
+};
 const Card = (props) => {
     return (
         <Container  fluid>
@@ -99,7 +99,9 @@ function LandingJumbo() {
             
             <div style={{width: '100%', margin: 'auto'}}>
                 <div id='body'>
-                    <Header />
+                    {/* <Header /> */}<CardHeader 
+                                className='section bg-top'
+                                />
                     <div className='ButtonBases'>
                         <ButtonBases />
                 </div>
@@ -109,6 +111,7 @@ function LandingJumbo() {
                                 title='Introduction' 
                                 description='The location of Possum Creek is renowned for its beauty and handy location to Bangalow and the beaches of Byron Bay. Here you will find a special holiday getaway in a home lovingly constructed using timber and Mt Warning basalt rock. The main "Rosella" house with an outlook to rolling fields. Both accommodation options have access to sparkling clear swimming hole and rainforest pocket.'
                                 />
+                            
                             <Card 
                                 className='section bg-grey'
                                 title='Rosella - 3 Bed'

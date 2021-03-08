@@ -3,21 +3,7 @@
   padding:0;
   box-sizing: border-box;
 }
-.Welcome {
-  color: white;
-}
-.container-main {
-margin-top: 60px;
-    background-color: rgb(58,181,74);
-    border-left: 4px solid rgb(58,181,74);
-    border-radius: 25px;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  margin-left: 10px;
-  /* background-color: DodgerBlue; */
-}
+
 #body{
   min-width: 100%;
   display: flex;
@@ -27,6 +13,20 @@ margin-top: 60px;
   margin: 0px;
   position: relative;
   font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.Welcome {
+  color: white;
+}
+.container-main {
+  margin-top: 146px;
+  background-color: rgb(58,181,74);
+  border-left: 4px solid rgb(58,181,74);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-left: 10px;
 }
 
 .header{

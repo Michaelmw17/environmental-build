@@ -214,37 +214,11 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="footer-social-links">
-              <div className="footer-social-link linkedin" href="#" target="_blank">
-                <span className="hidden-link-text">Linkedin</span>
-                <a href="https://twitter.com/Michael51620516" className="twitter social">
-                <FontAwesomeIcon icon={faTwitter} size="2x" />
-              </a>
-              </div>
-              <div className="footer-social-link twitter" target="_blank">
-                <span className="hidden-link-text">Twitter</span>
-                <a
-                    href="https://github.com/Michaelmw17"
-                  className="Github social"
-                  >
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-                  </a>
-              </div>
-              <div className="footer-social-link youtube" href="https://www.linkedin.com/in/michael-watt-6a76961b3/" target="_blank">
-                <span className="hidden-link-text">Linkedin</span>
-                  <a
-                  href="https://www.linkedin.com/in/michael-watt-6a76961b3/"
-                  className="Linkedin social"
-                >
-                  <FontAwesomeIcon  icon={faLinkedin} size="2x" />
-                </a>
-              </div>
-            </div> */}
           </div>
           <div className="footer-copyright">
             <div className="footer-copyright-wrapper">
               <p className="footer-copyright-text">
-                <a className="footer-copyright-link" href="https://michaelmw17.github.io/mw/" target="_self"> ©2021. | Designed By: Michael Watt. | All rights reserved. | </a><a href="https://www.vecteezy.com/free-vector/nature">Nature Vectors by Vecteezy</a>
+                <a className="footer-copyright-link" rel="noreferrer" href="https://michaelmw17.github.io/mw/" target="_self"> ©2021. | Designed By: Michael Watt. | All rights reserved. | </a><a href="https://www.vecteezy.com/free-vector/nature">Nature Vectors by Vecteezy</a>
               </p>
             </div>
           </div>

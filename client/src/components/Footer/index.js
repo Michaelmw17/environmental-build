@@ -53,10 +53,7 @@ const StyledButton = styled(Button)`
 }
 `;
 
-const testDataThree = {
-  text: "Profile",
-  link: "./userProfile"
-};
+
 
 const testDataSix = {
   text: "Privacy Notice",
@@ -130,11 +127,16 @@ const Footer = () => {
                             </Link>
                         </li>
                       <li>
+                          <Link  className="menu-item" to="/userProfile">
+                            Profile
+                            </Link>
+                        </li>
+                      {/* <li>
                           <Href
                           text={testDataThree.text}
                           url={testDataThree.link}
                           />
-                        </li>
+                        </li> */}
                 </ul>
               </div>
               <div className="footer-menu">

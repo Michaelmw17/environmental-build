@@ -6,6 +6,7 @@ import {
   Marker
 } from "@react-google-maps/api";
 
+import Href from "../LocationInfo/Href";
 const exampleMapStyles = [
     {
         featureType: "poi",
@@ -41,26 +42,30 @@ const center = {
   lng: 153.49115868416783
 };
 
-function MyComponent() {
+function MyComponent(props) {
   const [isOpened, setOpened] = useState(false);
-
+const testData = {
+  text: "  495 Friday Hut Road, Possum Creek",
+  link: "https://www.google.com/maps/place/495+Friday+Hut+Rd,+Possum+Creek+NSW+2479/data=!4m2!3m1!1s0x6b9088b3f117865d:0x538c627863a29552?sa=X&ved=2ahUKEwjC2YHPpaPvAhXtzjgGHWruCisQ8gEwAHoECAQQAQ"
+};
   return (
     <LoadScript googleMapsApiKey="AIzaSyDClsZrp7BOREKiMZvP3P8lZhdh3UCFkqE"
->
+      >
         <GoogleMap
         center={center}
         defaultOptions={{
                 styles: exampleMapStyles,
             }}
         mapContainerStyle={{
-            height: `120vh`, marginLeft: '30px',
-                  marginRight: '30px',
-                  marginTop: '40px'
+              height: `120vh`,
+              marginLeft: '30px',
+              marginRight: '30px',
+              marginTop: '40px'
         }}
-        
         zoom={11}
           >
         <Marker
+          title='Possum'
           position={center}
           onClick={() => {
             setOpened(!isOpened);
@@ -75,11 +80,17 @@ function MyComponent() {
               y: -(height / 2)
             })}
           >
-            <div
-              style={{ backgroundColor: "red", height: "50px", width: "50px" }}
-            >
-              Text
-            </div>
+             <div style={{ background: `white`, border: `1px solid #ccc`, padding: 5 }}>
+              <p>Address</p>
+              <ul className='list-unstyled'>
+                      <li>
+                          <Href
+                          text={testData.text}
+                          url={testData.link}
+                          />
+                </li>
+              </ul>
+      </div>
           </OverlayView>
         )}
       </GoogleMap>

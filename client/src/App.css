@@ -12,7 +12,7 @@
 html, body {
     --hue: var(--hue-neutral);
     background-color: #ffffff;
-    height: 100%;
+    height: 100vw;
     margin: 0;
     background-image: url(./components/assets/images/nature.webp);
     -webkit-background-size: cover;
@@ -115,7 +115,7 @@ h5 {
     }
     .ListItems{
         font-size: 16px;
-        line-height: 115%;
+        line-height: 135%;
     }
     #currentTime {
         margin-top: 0;
@@ -187,7 +187,7 @@ h5 {
     }
    .ListItems{
         font-size: 17px;
-        line-height: 115%;
+        line-height: 135%;
     }
     #currentTime {
         margin-top: 30px;

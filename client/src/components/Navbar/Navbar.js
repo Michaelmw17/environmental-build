@@ -65,7 +65,7 @@ function Navbar() {
             </li>
             <li>
                 <ThemeProvider theme={theme}>
-                        <Button color="primary" variant="contained"  href="./profile" className={classes.margin}>
+                        <Button color="primary" variant="contained"  href="./userProfile" className={classes.margin}>
                         DashBoard
                         </Button>
                     </ThemeProvider>
@@ -74,27 +74,13 @@ function Navbar() {
                 <ThemeProvider theme={theme}>
                     <Button color="secondary" variant="contained"href="./"
                         className={classes.margin} 
-                        
-                    id="logoutBtn"
-                    data-toggle="modal"
-                    data-target="#logoutModal"
-                    onClick={handleLogOut}>
+                        id="logoutBtn"
+                        data-toggle="modal"
+                        data-target="#logoutModal"
+                        onClick={handleLogOut}>
                         Logout
                         </Button>
                     </ThemeProvider>
-            </li>
-            
-            <li>
-            
-                {/* <button
-                    className="btn btn-sm bg-info active"
-                    id="logoutBtn"
-                    data-toggle="modal"
-                    data-target="#logoutModal"
-                    onClick={handleLogOut}
-                >
-                    <div>Logout</div>
-                </button> */}
             </li>
         </ul>
     );

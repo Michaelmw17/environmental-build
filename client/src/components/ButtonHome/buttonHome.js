@@ -29,7 +29,7 @@ const images = [
     url: './Images/image23.webp',
     title: 'Profile',
     width: '50%',
-        siteUrl: "/profile",
+        siteUrl: "/userProfile",
     },
 ];
 

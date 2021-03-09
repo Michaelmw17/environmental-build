@@ -27,6 +27,9 @@ const SideBarNav = ()  => {
                     <Link className="menu-item" to="/profile"  >
                     Profile
                     </Link>
+                    <Link className="menu-item" to="/userProfile"  >
+                    Profile
+                    </Link>
                                     <hr className="sidebar-divider d-none d-md-block" />
                     <Link  className="menu-item" to="/login">
                     Login

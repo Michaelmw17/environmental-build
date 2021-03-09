@@ -1,12 +1,6 @@
 import React, {  Suspense } from "react";
 import Href from "../LocationInfo/Href";
 import './styles.css'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faLinkedin,
-//   faTwitter,
-//   faGithub
-// } from "@fortawesome/free-brands-svg-icons";
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import Spinner from 'react-bootstrap/Spinner'
@@ -61,7 +55,7 @@ const StyledButton = styled(Button)`
 
 const testDataThree = {
   text: "Profile",
-  link: "./profile"
+  link: "./userProfile"
 };
 
 const testDataSix = {
@@ -96,7 +90,7 @@ const Footer = () => {
               <div className="footer-menu">
                 <h2 className="footer-menu-name"> Company</h2>
                 <ul id="menu-get-started" className="footer-menu-list">
-                  <ul className='list-unstyled'>
+                  <div className='list-unstyled'>
                         <li>
                             <Link className="menu-item" to="/about">
                         About
@@ -117,7 +111,7 @@ const Footer = () => {
                     Location
                     </Link>
                         </li>
-                  </ul>
+                  </div>
                 </ul>
               </div>
             </div>
@@ -186,7 +180,7 @@ const Footer = () => {
                           </Link>
                         </li>
                         <li>
-                            <Link className="menu-item" to="/profile"  >
+                            <Link className="menu-item" to="/userProfile"  >
                             Profile
                             </Link>
                         </li>

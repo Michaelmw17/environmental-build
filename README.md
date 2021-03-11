@@ -22,13 +22,9 @@ This app has been deployed directly to heroku since there is a script defined in
 
 
 #### Final Product
-
-![Photo5](client/public/Images/Screen5.png)
-![Photo6](client/public/Images/Screen6.png)
-![Photo1](client/public/Images/Screen7.png)
+![Photo4](client/public/Images/Screen3.png)
 ![Photo2](client/public/Images/Screen2.png)
 ![Photo3](client/public/Images/Screen1.png)
-![Photo4](client/public/Images/Screen3.png)
 
 
 ## Available Scripts

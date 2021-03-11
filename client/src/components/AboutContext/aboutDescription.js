@@ -69,7 +69,7 @@ const items = words.map((word, e) => {
     return <li key={e}>{word}</li>;
 });
 
-const sectionTwo = ['The location of Possum Creek is renowned for its beauty and handy location to Bangalow and the beaches of Byron Bay. Here you will find a special home lovingly constructed using timber and Mt Warning basalt rock. The house outlook is North and overlooking rolling fields With a sparkling clear waterhole a short walk through the Rainforest pocket away this property will provide its new owners with a brilliant hinterland lifestyle. This holiday getaway has it all in a low environmental impact home. Environmental features include rainforest pockets, access to Possum creek swimming hole, pristine koala, abundant birdlife, wallabies and platypus habitat. The home is solar powered with plentiful raintank sourced water. Enjoy the comforts of a cosy home with a fireplace and NBN access in a pristine environment.'];
+const sectionTwo = ['Possum Creek is a beautiful place close to Bangalow and the beaches of Byron Bay. There are two options for a holiday getaway. The main “Rosella” house outlook is North and overlooking rolling fields. The flat “Bluebird” is a one bedroom unit.  Enjoy a low environmental impact getaway include rainforest pockets, access to Possum creek swimming hole, pristine koala, abundant birdlife, wallabies and platypus habitat. The home is solar powered with plentiful rain tank sourced water. Enjoy the comforts of a cosy home with a fireplace and NBN access in a pristine environment.'];
 const itemsTwo = sectionTwo.map((word, e) => {
     return <li key={e}>{word}</li>;
 });

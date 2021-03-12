@@ -9,7 +9,7 @@
 [Eco Getaway](https://eco-getaway.herokuapp.com/)
 
 ## Getting Started
-This repository aims to assist a user in beginning work on a MERN stack application for heroku deployment with a solid file structure as a foundation. 
+This repository aims to assist a user in beginning work on a MERN stack application for heroku deployment with a solid file structure as a foundation.
 
 - A ReactJS front end that uses jwt_passport for authentication and authorization .
 - A MongoDB Backend.
@@ -33,7 +33,6 @@ Please note that any time the server is run in these scripts `nodemon` is used i
 
 Runs both the client app and the server app in development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view the client in the browser.
-
 
 ### `react-scripts build`
 

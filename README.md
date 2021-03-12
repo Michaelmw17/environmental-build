@@ -8,7 +8,14 @@
 
 [Eco Getaway](https://eco-getaway.herokuapp.com/)
 
+## Table of Contents
+[Getting Started](#gettingStarted)
 
+[Final Product](#finialproduct)
+
+[Available Scripts](#availableScripts)    
+[Licenses](#licenses)  
+[Contributing](#contributing)                                                                                                     
 ## Getting Started
 This repository aims to assist a user in beginning work on a MERN stack application for heroku deployment with a solid file structure as a foundation. 
 
@@ -19,7 +26,6 @@ This repository aims to assist a user in beginning work on a MERN stack applicat
 Since this project will hold both the client application and the server application there will be node modules in two different places. First run `npm install` from the root. After this you will run `npm  install` from the root. Then create a `.env` file with your secret key, and MongoDB connection string. This is a script we have defined in package.json. Alternatively your group may choose to simplify this process by using yarn workspaces as specified [here](https://yarnpkg.com/lang/en/docs/workspaces/).
 
 This app has been deployed directly to heroku since there is a script defined in package.json which will automatically handle building and deploying the app. For more information on deploying to heroku reference the extra resources at the bottom of this file.
-
 
 #### Final Product
 ![Photo4](client/public/Images/Screen3.png)

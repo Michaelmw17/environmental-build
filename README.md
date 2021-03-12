@@ -8,14 +8,6 @@
 
 [Eco Getaway](https://eco-getaway.herokuapp.com/)
 
-## Table of Contents
-[Getting Started](#gettingStarted)
-
-[Final Product](#finialproduct)
-
-[Available Scripts](#availableScripts)    
-[Licenses](#licenses)  
-[Contributing](#contributing)                                                                                                     
 ## Getting Started
 This repository aims to assist a user in beginning work on a MERN stack application for heroku deployment with a solid file structure as a foundation. 
 

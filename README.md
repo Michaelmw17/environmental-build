@@ -68,10 +68,10 @@ To learn how to deploy a full-stack web app to heroku, check out [this great gui
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Contents
+### Contents
 MERN Project composed with components,  readme, package.json, public and src folder with React and license files.
 
-## Built With
+### Built With
 
 - [VScode](https://code.visualstudio.com/) - The editor of choice
 - [Terminal](https://gitforwindows.org/) - What would we do without our bash?
@@ -79,8 +79,8 @@ MERN Project composed with components,  readme, package.json, public and src fol
 ### Licence
 
 License under the [MIT License](LICENSE)
-​
-## Author
+
+### Author
 
 _Michael Watt_
 

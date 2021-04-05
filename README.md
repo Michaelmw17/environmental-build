@@ -61,7 +61,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 #### `.gitignore` - Tells git which files to ignore
 #### `README` - This file!
 
-## Learn More
+### Learn More
 To learn how to setup a local MongoDB instance for testing, check out how to [connect to MongoDB](https://docs.mongodb.com/guides/server/drivers/).
 
 To learn how to deploy a full-stack web app to heroku, check out [this great guide](https://daveceddia.com/deploy-react-express-app-heroku/).
